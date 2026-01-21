@@ -1,7 +1,0 @@
-held_county_fair_effect = {
-	name = held_county_fair
-	add_piety_modifier = 0.03
-	global_revolt_risk = 0.03
-	icon = 5
-	years = 2
-}

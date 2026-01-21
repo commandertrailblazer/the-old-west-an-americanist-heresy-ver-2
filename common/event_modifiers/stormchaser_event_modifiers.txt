@@ -1,7 +1,0 @@
-#Influence stuff
-stormchaser_successful_mission = {
-	society_influence = 1
-}
-stormchaser_successful_mission_failed_mission = {
-	society_influence = -1
-}
