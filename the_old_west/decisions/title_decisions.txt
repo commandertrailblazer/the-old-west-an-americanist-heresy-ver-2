@@ -1,0 +1,69 @@
+decisions = {
+	form_the_new_west = {
+		is_high_prio = yes
+		ai_check_interval = 24
+		ai_will_do = {
+			factor = 1
+		}
+		potential = {
+			is_alternate_start = no
+			is_playable = yes
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			is_playable = yes
+			independent = yes
+			religion = Western
+			e_new_west = {
+				has_holder = no
+				}
+		}
+			allow = {
+				is_adult = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				prestige = 1500
+				piety = 1000
+				realm_size = 150
+				OR = {
+					has_landed_title = k_platte
+					has_landed_title = k_colorado
+					has_landed_title = k_navajoland
+					OR = {
+						has_landed_title = k_comancheria
+						has_landed_title = k_redland
+						has_landed_title = k_panhandle
+						has_landed_title = k_new_mexico
+							}
+				religion_group = Western
+					}
+				}	
+			
+		effect = {
+			activate_title = { title = e_new_west = yes }
+			primary_title = {
+				e_new_west = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+					}
+				}
+			scaled_wealth = -2
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+				}
+			revoke_allowed = {
+				always = no
+				}
+			ai_will_do = {
+				factor = 1
+				}
+			hidden_tooltip = {
+				narrative_event = {id = western_events.1}
+			}
+		}
+	}
+}

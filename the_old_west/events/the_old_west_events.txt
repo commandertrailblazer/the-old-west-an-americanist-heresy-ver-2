@@ -1,0 +1,802 @@
+#Western Events
+namespace = western_events
+
+#Creation of the New West
+narrative_event = {
+	id = western_events.1
+	desc = western_events.1.desc
+	texturefile = "gfx\event_pictures\GFX_old_west.dds"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+#Vassalize the Marshals
+letter_event = {
+		id = marshals.20
+		desc = marshals_20
+		border = GFX_event_letter_frame_religion
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = THANKS_BE_TO_PROVIDENCE
+		}
+	}
+#Donate money to the Marshals
+character_event = {
+	id = marshals.30
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = marshals.31
+				}
+			}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+			}
+		}
+	}
+#notification for donating
+letter_event = {
+		id = marshals.31
+		desc = EVTDESCmarshals.31
+		border = GFX_event_letter_frame_religion
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = EXCELLENT
+			}
+		}	
+
+#Expel the Marshals	
+character_event = {
+	id = marshals.40
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+							}
+						}
+					}
+				}
+			usurp_title = FROM
+			}
+			FROM = {
+				letter_event = {
+					id = marshals.50
+					}
+				}
+			opinion = {
+				who = FROM
+				modifier = opinionn_expelled_from_realm
+				}
+			}
+		}
+#Notification event when expelling the Marshals
+letter_event = {
+			id = marshals.50
+			desc = EVTDESCmarshals_50
+			border = GFX_event_letter_frame_religion
+			
+			is_triggered_only = yes
+			
+			option = {
+				name = EVTOPTAmarshals.50
+			}
+		}	
+#Son wants to join the Marshals (Son)
+character_event = {
+	id = marshals_join.60
+	hide_window = yes
+	
+	ai = yes
+	min_age = 16
+	max_age = 40
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	has_dlc = "The Old Gods"
+	religion_group = oldworld
+	
+	trigger = {
+		is_landed = no
+		in_command = no
+		religion = Western
+		NOT = {
+			has_character_flag = wants_marshals
+			}
+		father = {
+			is_alive = yes
+			is_ruler = yes
+			is_liege_of = ROOT
+			prisoner = no
+			NOT = { is_incapable = yes }
+			NOT = { host = { character = PREVPREV } }
+			}
+		}
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = proud
+		}
+		modifier = {
+			factor = 0.75
+			trait = impaler
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+		modifier = {
+			factor = 1.5
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = craven
+		}
+	}
+
+	immediate = {
+		father = { character_event = { id = marshals_join.61 } }
+		set_character_flag = wants_marshals
+		}
+	}	
+#Son wants to join the Marshals (Father)
+character_event = {
+	id = marshals_join.61
+	desc = EVTDESCmarshals_61
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshal.61
+		FROM = {
+			opinion = {
+				modifier = opinion_very_disappointed
+				years = 1
+				who = ROOT
+			}
+		}
+		prestige = -100
+	}
+	option = {
+		name = EVTOPTBmarshal.61
+		d_marshals = {
+			holder_scope = {
+				FROM = {
+					move_character = PREVPREV
+					}
+				}
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = marshals_join.62 days = 1460 }
+					}
+				}
+			prestige = 100
+			}
+		}	
+	}
+character_event = {
+	id = marshals_join.62
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_character_flag = serving_marshals
+		clr_character_flag = wants_marshals
+		}
+	}
+#Son returns scarred but seasoned (Son)
+character_event = {
+	id = marshals_return.63
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		NOT = { trait = scarred }
+		}
+	mean_time_to_happen = {
+		months = 160
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+	}
+	immediate = {
+		father = { character_event = { id = marshals_return.64 } }
+		clr_character_flag = serving_marshals
+		}
+	}
+
+#Son returns scarred but seasoned (Father)
+character_event = {
+		id = marshals_return.64
+		desc = EVTDESCmarshals.64
+		picture = GFX_evt_viking_throneroom_oldgods
+		border = GFX_event_normal_frame_war
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = EVTOPTAmarshals.64
+			FROM = {
+				move_character = ROOT
+				add_trait = scarred
+				change_martial = 4
+			}	
+		}		
+	}
+#son returns maimed (son)
+character_event = {
+	id = marshals_return.65
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		NOT = {
+			is_maimed_trigger = yes
+			}
+		}
+	mean_time_to_happen = {
+		months = 250
+	}
+	immediate = {
+		add_maimed_trait_effect = yes
+		father = { character_event = { id = marshals_return.66 } }
+		clr_character_flag = serving_marshals
+		}
+	}
+#son returns maimed (father)
+character_event = {
+	id = marshals_return.66
+	desc = EVTDESCmarshals.66
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshal.66
+		FROM = {
+			move_character = ROOT
+			tooltip = { add_maimed_trait_effect = yes }
+			}
+		}
+	}
+#son returns as excellent strategist (son)
+character_event = {
+	id = marshals_return.67
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		NOT = { trait = brilliant_strategist }
+		OR = {
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			}
+		}	
+	mean_time_to_happen = {
+		months = 160
+		
+		modifier = {
+			factor = 0.5
+			trait = genius
+		}
+		modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.75
+			trait = quick
+		}
+		modifier = {
+			factor = 1.5
+			is_dumb_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			trait = imbecile
+		}
+	}
+	immediate = {
+		father = { character_event = { id = marshals_return.68 } }
+		clr_character_flag = serving_marshals
+		}
+	}
+#son returns as excellent strategist (father)
+character_event = {
+		id = marshals_return.68
+		desc = EVTDESCmarshals.68
+		picture = GFX_evt_viking_throneroom_oldgods
+		border = GFX_event_normal_frame_war
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = EVTOPTAmarshal.68
+		if = {
+			limit = {
+				FROM = {
+					trait = skilled_tactician
+				}
+			}
+			FROM = {
+				hidden_tooltip = { remove_trait = skilled_tactician }
+				add_trait = brilliant_strategist
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						trait = misguided_warrior
+						trait = tough_soldier
+					}	
+				}
+			}
+			FROM = {
+				hidden_tooltip = { 
+					remove_trait = misguided_warrior
+					remove_trait = tough_soldier
+				}
+				add_trait = skilled_tactician
+			}
+		}
+		FROM = {
+			change_martial = 2
+			move_character = ROOT
+		}
+	}
+}
+#Son returns with ptsd (son)
+character_event = {		
+	id = marshals_return.69
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		NOT = { trait = depressed }
+		}
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.75
+			trait = kind
+		}
+		modifier = {
+			factor = 0.75
+			trait = poet
+		}
+		modifier = {
+			factor = 0.75
+			trait = musician
+		}
+		modifier = {
+			factor = 0.75
+			trait = just
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.70 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+#Son returns with ptsd (father)
+character_event = {
+	id = marshals_return.70
+	desc = EVTDESCmarshals.70
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshals.70
+		FROM = {
+			move_character = ROOT
+			add_trait = stressed
+			add_trait = depressed
+		}
+	}
+}
+# Son returns home with wife (Son)
+character_event = {
+	id = marshals_return.71
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		is_married = no
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.75
+			trait = lustful
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.72 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+# Son returns home with wife
+character_event = {
+	id = marshals_return.72
+	desc = EVTDESCmarshals.72
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAamarshals.72
+		create_character = {
+			random_traits = yes
+			dynasty = NONE
+			female = yes
+			age = 26
+			religion = Western
+			culture = FROM
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			character_event = { id = misc.4 } # Physique
+			add_spouse = FROM
+		}
+		FROM = { 
+			move_character = ROOT
+		}
+	}
+}
+
+# Son returns home as a zealot (Son)
+character_event = {
+	id = marshals_return.73
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_marshals
+	
+	trigger = {
+		NOT = { trait = zealous }
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+		
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.74 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+# Son returns home as a zealot
+character_event = {
+	id = marshals_return.74
+	desc = EVTDESCmarshals.74
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshals.74
+		FROM = {
+			move_character = ROOT
+			add_trait = zealous
+		}
+	}
+}
+
+# Son returns home as a seasoned warrior (Son)
+character_event = {
+	id = marshals_return.75
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	
+	trigger = {
+		has_character_flag = serving_marshals
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			is_strong_trigger = yes
+		}
+		modifier = {
+			factor = 0.75
+			trait = quick
+		}
+		modifier = {
+			factor = 0.75
+			trait = genius
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			is_dumb_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			trait = imbecile
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.76 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+# Son returns home as a seasoned warrior
+character_event = {
+	id = marshals_return.76
+	desc = EVTDESCmarshals.76
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshals.76
+		FROM = {
+			move_character = ROOT
+			add_trait = brave
+			change_martial = 2
+		}
+	}
+}
+
+# Son dies in battle (Son)
+character_event = {
+	id = marshals_return.77
+	hide_window = yes
+	has_dlc = "The Old Gods"
+	
+	trigger = {
+		has_character_flag = serving_marshals
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.75
+			trait = head1
+		}
+		modifier = {
+			factor = 0.75
+			trait = head2
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+		modifier = {
+			factor = 0.75
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.75
+			trait = has_small_pox
+		}
+		modifier = {
+			factor = 0.75
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.5
+			is_incapable = yes
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.78 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+# Son dies in battle
+character_event = {
+	id = marshals_return.78
+	desc = EVTDESCmarshals.78
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshals.78
+		FROM = { death = { death_reason = death_battle } }
+	}
+}
+
+# Son returns with loot (Son)
+character_event = {
+	id = marshals_return.79
+	hide_window = yes
+	has_dlc = "The Old Gods"
+
+	trigger = {
+		has_character_flag = serving_marshals
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+		
+		modifier = {
+			factor = 0.75
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.75
+			stewardship = 10
+		}
+	}
+	
+	immediate = {
+		father = { character_event = { id = marshals_return.80 } }
+		clr_character_flag = serving_marshals
+	}
+}
+
+# Son returns with loot
+character_event = {
+	id = marshals_return.80
+	desc = EVTDESCmarshals.80
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAmarshals.80
+		FROM = {
+			move_character = ROOT
+		}
+		wealth = 300
+	}
+}
+
+# Father dies, Player Son is heir
+character_event = {
+	id = marshals_return.81
+	desc = EVTDESCmarshals.81
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_war
+	has_dlc = "The Old Gods"
+	ai = no
+	
+	trigger = {
+		OR = {
+			has_character_flag = wants_marshals
+			has_character_flag = serving_marshals
+		}
+		father = { is_alive = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_character_flag = wants_marshals
+		clr_character_flag = serving_marshals
+	}
+	
+	option = {
+		name = EVTOPTAmarshals.81
+		prestige = 200
+		wealth = 200
+	}
+}
+
+		
+
+
+
+
+
+	
