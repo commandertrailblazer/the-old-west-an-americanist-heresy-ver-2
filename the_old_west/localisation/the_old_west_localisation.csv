@@ -1,0 +1,288 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+#religion
+Western;Western;;;;;;;;;;;;;x
+Western_DESC;Many in the lands of the Old West still tell the stories of the heroes and villains of their long past, and see them as the true deities worth worshipping, rather than the founders of the far-off East Coast;;;;;;;;;;;;;x
+Western_opinion;[Western.GetName] Opinion;;;;;;;;;;;;;x
+Western_FEATURES;�Y*�! Western rulers that reach old age can choose to retire in favor of their chosen sucessor.;;;;;;;;;;;;;x
+texan_americanist;Texan;;;;;;;;;;;;x
+texan_americanist_DESC;Growing out of and parallel to Western Americanism, the Texan form of the faith takes the Western ideals of independence to a further extreme. While acknowledging the divinity og America and her founding fathers, Texans believe that Texas and her heroes surpassed the older American gods and occupy a greater position. As a result, Texas Americanism is ectremely regional and cultural.;;;;;;;;;;;;;x
+texan_americanist_opinion;[texan_americanist.GetName] Opinion;;;;;;;;;;;;;x
+texan_americanist_FEATURES;�Y*�! Texans cannot reform America./n�Y*�! Texan rulers that reach old age can choose to retire in favor of their chosen sucessor.;;;;;;;;;;;;;x
+
+#titles
+e_new_west;The New West;;;;;;;;;;;;;x
+e_new_west_adj;Western;;;;;;;;;;;;;x
+d_marshals;The Marshals of the West;;;;;;;;;;;;;x
+d_usms;The United States Marshal Service;;;;;;;;;;;;;x
+d_rangers;Texas Rangers;;;;;;;;;;;;;x
+d_texangoverner;Governate of Texas;;;;;;;;;;;;;x
+
+#decisions
+form_the_new_west;Form the Empire of the New West;;;;;;;;;;;;;x
+form_the_new_west_desc;Now that you have united much of the heartlands of the Old West, it is time to create a title worthy of your station;;;;;;;;;;;;;x
+abdicate_western;Western Abdication;;;;;;;;;;;;;x
+abdicate_western_desc;As you have now gotten into your twilight years, would it not be better to retire and live out on the range;;;;;;;;;;;;;x
+hold_state_fair;Hold a state fair;;;;;;;;;;;;;x
+hold_state_fair_desc;Fairs have been a cornerstone of Western activities for years;;;;;;;;;;;;;x
+western_pilgrimage;Western Pilgrimage;;;;;;;;;;;;;x
+western_pilgrimage_desc;The time has come to make a pilgrimage to the holy sites of our faith;;;;;;;;;;;;;x
+donate_money_to_marshals;Donate money to the Marshals;;;;;;;;;;;;;x
+donate_money_to_marshals_desc;Donate some money to the Marshals;;;;;;;;;;;;;x
+texasgreat;Establish the office of Texan Governor.;;;;;;;;;;;;;x
+texasgreat_desc;Now that Texas has been restored, it is time to install a Texan governor to guide our faith in this new age.;;;;;;;;;;;;;x
+texgov;Restored Governate;;;;;;;;;;;;;x
+
+#events
+fair_invitations;Send out some invitations to your vassals;;;;;;;;;;;;;x
+western_events.1.desc;Carving out a place for you and your decendants from the ruins of the West and a new power has now risen on the Plains;;;;;;;;;;;;;x
+marshals_20;[From.GetTitledFirstName] has agreed to enter your service. The Marshals now serve you!;;;;;;;;;;;;;x
+THANKS_BE_TO_PROVIDENCE;Thanks be to Providence!;;;;;;;;;;;;;x
+EVTDESCmarshals.31;[From.GetTitledFirstName] has graciously accepted your donation and has assured you it will be put to good use.;;;;;;;;;;;;;x
+EVTDESCmarshals_50;The Marshals have been expelled from [PrimaryTitle.GetFullBaseName] and all their lands handed over to you;;;;;;;;;;;;;x
+EVTOPTAmarshals.50;Good Riddance!;;;;;;;;;;;;;x
+EVTDESCmarshals_61;[From.GetTitledFirstName] has decided to join in with the Marshals and seek his fortune in a life in emulation of Bass Reeves. Although he will no doubt gain both riches and valuable battle experience in service to Providence, there will be many perils that could well cost him his life.;;;;;;;;;;;;;x
+EVTOPTAmarshals.61;I will not allow it!;;;;;;;;;;;;;x
+EVTOPTBmarshals.61;Go to the Marshals and make me proud;;;;;;;;;;;;;x
+EVTDESCmarshals.64;A heavily scarred warrior clad in strange armor approaches your throne;;;;;;;;;;;;;x
+EVTOPTAmarshals.64;[From.GetFirstname]! You've...changed!;;;;;;;;;;;;;x
+EVTDESCmarshals.66;A frail robed man is led into your throne room and your guards explain he jsut came on a caravan coming from the Marshals. The man would only speak your name over and over again and so he was brought to you. To your horror you recognize him at last as [From.GetTitledFirstName]!;;;;;;;;;;;;;x
+EVTOPTAmarshals.66;[From.GetFirstname] what have they done to you?!;;;;;;;;;;;;;x
+EVTDESCmarshals.68;[From.GetTitledFirstName] has finally returned home after a long and successful time with the Marshals! He fought in several battles and learned much from the clever strategies and tactics favored by the band in their raids.;;;;;;;;;;;;;x
+EVTOPTAmarshals.68;Tell me of your battles [From.GetFirstname].;;;;;;;;;;;;;x
+EVTDESCmarshals.70;[From.GetFirstname] has returned from the Marshals but he refuses to speak of his experiences there. You know he took part in several battles and killed many foes but instead of reveling in the glory of his accomplishments [From.GetFirstName] is plagued by nightmares and jumps at sudden sounds.;;;;;;;;;;;;;x
+EVTOPTAmarshals.70;Strange;;;;;;;;;;;;;x
+EVTDESCmarshals.72;[From.GetTitledFirstName] has come home from the Marshals but he is not alone. He has found a wife and brought her with him. She seems loyal and well versed in the ways of Providence she will make a good wife.;;;;;;;;;;;;;x
+EVTOPTAamarshals.72;Each to their own;;;;;;;;;;;;;x
+EVTDESCmarshals.74;After many years with the Marshals [From.GetTitledFirstName] has finally been released from his service and has returned home. Your son is a changed man however. Secular matters no longer hold any interest for himand he instead speaks incessantly of Providence and the Heroes.;;;;;;;;;;;;;x
+EVTOPTAmarshals.74;I knew those Marshals would be a bad influence.;;;;;;;;;;;;;x
+EVTDESCmarshals.76;[From.GetTitledFirstName] has returned from the Marshals as a changed man. He is wiser more confident in his own abilities and more knowledgable in matters of war. It seems the time spent with the Marshals did him good.;;;;;;;;;;;;;x
+EVTOPTAmarshals.76;Welcome home.;;;;;;;;;;;;;x
+EVTDESCmarshals.78;Several members of the Marshals have returned home and they bring grave news. Hat in hand, they tell you of the death of [From.GetTitledFirstName] in battle.They assure you that [From.GetSheHe] faced [From.GetHerHis] enemy with bravery and slew many before their numbers overwhelmed [From.GetHerHim];;;;;;;;;;;;;x
+EVTOPTAmarshals.78;[From.GetSheHe] died a hero...;;;;;;;;;;;;;x
+EVTDESCmarshals.80;[From.GetTitledFirstName] has at last returned from the Marshals in a caravan filled with the spoils of war! Apparently the Marshals are generous to those who serve Providence well and there is gold here from all over the world. Your son insists on sharing these riches with youhis loving [Root.GetFromRelation];;;;;;;;;;;;;x
+EVTOPTAmarshals.80;[From.GetFirstName]you make me proud!;;;;;;;;;;;;;x
+EVTDESCmarshals.81;Upon learning of the death of your father you left the Marshalsin a caravan filled with loot from your campaigns. It was a long and perilous journey back but your feet are now firmly planted on the soil of the land that is your birthright. The throne is yours.;;;;;;;;;;;;;x
+EVTOPTAmarshals.81;It is as I remember it.;;;;;;;;;;;;;x
+
+
+#trade routes
+western_trail;Western Cattle Trail;;;;;;;;;;;;;x
+western_trail_trade_province_desc;Can only build Trade Route Posts in certain counties along the Western Trail. Open the trade map mode to see valid countiees;;;;;;;;;;;;;x
+
+#Artifacts
+pete_pistol;Pete's Pistol;;;;;;;;;;;;;x
+
+#Bloodlines
+eaton;Blood of Pistol Pete
+nick_pistol_pete;Pistol Pete;;;;;;;;;;;;;x
+
+#society
+request_to_rank_up_within_stormchaser_society;Request to rank up;;;;;;;;;;;;;x
+warrior_lodge_become_stormchaser;Become a storm chaser;;;;;;;;;;;;;x
+warrior_lodge_become_stormchaser_desc;Become a Stormchaser;;;;;;;;;;;;;x
+warrior_lodge_become_meteorologist;Become a meteorologist;;;;;;;;;;;;;x
+warrior_lodge_become_meteorologist_desc;Become a meteorologist;;;;;;;;;;;;;x
+stormchaser_events_desc_102;You want to join my society?;;;;;;;;;;;;;x
+stormchaser_events_desc_122;great;;;;;;;;;;;;;x
+stormchaser_events_desc_141;You want a quest;;;;;;;;;;;;;x
+stormchaser_events_desc_142;Complete or fail;;;;;;;;;;;;;x
+stormchaser_events_desc_150;Event text;;;;;;;;;;;;;x
+stormchaser_sucessful_mission;Successful Mission;;;;;;;;;;;;;x
+stormchaser_failed_mission;Failed Mission;;;;;;;;;;;;;x
+stormchaser_events_103;Welcome to the society;;;;;;;;;;;;;x
+stormchaser_1031;Thank you;;;;;;;;;;;;;x
+EVTDESCstormchaser.10;Storms hold a place of prominence within the society of the Plains, as tornadoes and thunderstorms can cause massive damage to crops and towns. However, there are some that seek out the storms and help to warn villages and towns about the storms.;;;;;;;;;;;;;x
+EVTOPTAstormchaser.10;Excellent;;;;;;;;;;;;;x
+EVTDESCstormchaser.20;With enough time with the stormchaser, you believe that you can now move with the speed and the power of the storms of the Plains.;;;;;;;;;;;;;x
+EVTOPTAstormchaser.20;I am the storm that is approcahing...;;;;;;;;;;;;;x
+
+#traits
+meteorologist;Meteorologist;;;;;;;;;;;;;x
+meteorologist_desc;Storms are quite dangerous, and there must be those who track the storms;;;;;;;;;;;;;x
+stormchaser_trait;Storm Chaser;;;;;;;;;;;;;x
+stormchaser_trait_desc;While Meteorologists track the storms, stormchaser are the ones who follow the storms physically;;;;;;;;;;;;;x
+INSULT_WEATHER_MALE;What do you know weather boy?;;;;;;;;;;;;;x
+INSULT_WEATHER_FEMALE;What do you know weather girl?;;;;;;;;;;;;;x
+
+#Special Troops
+stormchaser_unit;stormchaser;;;;;;;;;;;;;x
+
+#pilgrim events
+western_pilgrim_1;Pilgrimage prep;;;;;;;;;;;;;x
+western_pilgrim_prep;The time has come to go on a pilgrimage to one of the holy sites of The Old West;;;;;;;;;;;;;x
+EVTNAME_pilgrim_okc;Pilgrimage to Okaysee;;;;;;;;;;;;;x
+EVTDESC_pilgrim_okc;In years past before the event, Okaysee served as a center of transportation and politics for the center fo the Old West;;;;;;;;;;;;;x
+EVTNAME_pilgrim_amarillo;Pilgrimage to Amarillo;;;;;;;;;;;;;x
+EVTDESC_pilgrim_amarillo;Amarillo serves as one of the gates to the Southwest, and was the major hub of the region before the Event;;;;;;;;;;;;;x
+EVTNAME_pilgrim_ftworth;Pilgrimage to Tarrant;;;;;;;;;;;;;x
+EVTDESC_pilgrim_ftworth;Fort Worth served as the transport hub of ancient Texas, and was one of the major stops of the cattle trails;;;;;;;;;;;;;x
+EVTNAME_pilgrim_dodge;Pilgrimage to Dodge;;;;;;;;;;;;;x
+EVTDESC_pilgrim_dodge;Dodge was a major center of thought about the West, and seemed to be somewhere that people wanted to get the hell out of;;;;;;;;;;;;;x
+EVTNAME_pilgrim_wheatland;Pilgrimage to Wheatland;;;;;;;;;;;;;x
+EVTDESC_pilgrim_wheatland;Many years before the event, Cheyanne served as the northern end of the cattle trails, but it has been many years since cattle have been driven that far north.;;;;;;;;;;;;;x
+EVTOPT_western_pilgrim_requestlearning;Request entrance in the name of Providence and the Heroes of the Old West;;;;;;;;;;;;;x
+EVTOPT_western_pilgrim_respondneutral_learn;Providence has much to show;;;;;;;;;;;;;x
+
+#County and State Fairs
+EVTDESC_county_fair_100;For many years, county fairs have served as a perfect way to not only unite the locality, but also to continue the Western tradition;;;;;;;;;;;;;x
+EVTOPTA_western_pilgrim_100;We must send our invitations;;;;;;;;;;;;;x
+EVTTOOLTIP_western_pilgrim_101;The Fair begins!;;;;;;;;;;;;;x
+EVTDESC_western_pilgrim_101;You have been invited to join [From.GetTitledFirstName] at their yearly fair;;;;;;;;;;;;;x
+EVTOPTA_western_pilgrim_101;Of course I will attend!;;;;;;;;;;;;;x
+fair_invitations_sent;You send invitations to your vassals;;;;;;;;;;;;;x
+attending_fair;You attend the fair;;;;;;;;;;;;;x
+EVTOPTB_western_pilgrim_101;I don't think so;;;;;;;;;;;;;x
+fair_declined;You decline to attend the fair;;;;;;;;;;;;;x
+EVTDESC_western_pilgrim_102;[From.GetTitledFirstName] has refused your invitation;;;;;;;;;;;;;x
+EVTOPTA_western_pilgrim_102;I didn't want [From.GetHerHim] there anyway!;;;;;;;;;;;;;x
+EVTDESC_western_pilgrim_103;The fair has begun, Yeehaw!;;;;;;;;;;;;;x
+EVTOPTA_western_pilgrim_103;Pass that funnel cake!;;;;;;;;;;;;;x
+EVTDESC_western_pilgrim_104;The fair lasts long into the night, as people sit around bonfires and tell stories;;;;;;;;;;;;;x
+EVTOPTA_western_pilgrim_104;Thank Providence!;;;;;;;;;;;;;x
+EVTDESC_western_pilgrim_105;The fair lasts long into the night, as people sit around bonfires and tell stories;;;;;;;;;;;;;x
+
+#Foas and Title Names
+baron_Western;Officer;;;;;;;;;;;;x
+count_Western;Constable;;;;;;;;;;;;;x
+duke_Western;Sheriff;;;;;;;;;;;;;x
+king_Western;State Governor;;;;;;;;;;;;;x
+emperor_Western;Grand Director;;;;;;;;;;;;;x
+temple_baron_Western;Marshal;;;;;;;;;;;;;x
+temple_count_Western;County Marshal;;;;;;;;;;;;;x
+temple_duke_Western;Regional Marshal;;;;;;;;;;;;;x
+temple_king_Western;State Marshal;;;;;;;;;;;;;x
+temple_emperor_Western;Grand Marshal;;;;;;;;;;;;;x
+baron_foa_Western;Officer;;;;;;;;;;;;x
+count_foa_Western;Constable;;;;;;;;;;;;;x
+duke_foa_Western;Sheriff;;;;;;;;;;;;;x
+king_foa_Western;Governor;;;;;;;;;;;;;x
+emperor_foa_Western;Director;;;;;;;;;;;;;x
+temple_count_foa_Western;Marhsal;;;;;;;;;;;;;x
+temple_duke_foa_Western;Marhsal;;;;;;;;;;;;x
+temple_king_foa_Western;Marhsal;;;;;;;;;;;;;x
+temple_emperor_foa_Western;Grand Marhsal;;;;;;;;;;;;;x
+barony_Western;Town;;;;;;;;;;;;;x
+temple_barony_Western;Field Office;;;;;;;;;;;;;x
+county_western;Constabulary;;;;;;;;;;;;;x
+duchy_Western;Sheriff's Department;;;;;;;;;;;;;x
+kingdom_Western;State;;;;;;;;;;;;;x
+barony_of_Western;Town of;;;;;;;;;;;;;x
+temple_barony_of_Western;Field Office of;;;;;;;;;;;;;x
+county_of_Western;Constabulary of;;;;;;;;;;;;;x
+duchy_of_Western;Sheriff's Office of;;;;;;;;;;;;;x
+kingdom_of_Western;State of;;;;;;;;;;;;;x
+empire_of_Western;Grand Directorate;;;;;;;;;;;;;x
+baron_texan_americanist;Officer;;;;;;;;;;;;x
+count_texan_americanist;Constable;;;;;;;;;;;;;x
+duke_texan_americanist;Sheriff;;;;;;;;;;;;;x
+king_texan_americanist;State Governor;;;;;;;;;;;;;x
+emperor_texan_americanist;Grand Director;;;;;;;;;;;;;x
+temple_baron_texan_americanist;Marshal;;;;;;;;;;;;;x
+temple_count_texan_americanist;County Marshal;;;;;;;;;;;;;x
+temple_duke_texan_americanist;Regional Marshal;;;;;;;;;;;;;x
+temple_king_texan_americanist;State Marshal;;;;;;;;;;;;;x
+temple_emperor_texan_americanist;Grand Marshal;;;;;;;;;;;;;x
+baron_foa_texan_americanist;Officer;;;;;;;;;;;;x
+count_foa_texan_americanist;Constable;;;;;;;;;;;;;x
+duke_foa_texan_americanist;Sheriff;;;;;;;;;;;;;x
+king_foa_texan_americanist;Governor;;;;;;;;;;;;;x
+emperor_foa_texan_americanist;Director;;;;;;;;;;;;;x
+temple_count_foa_texan_americanist;Marhsal;;;;;;;;;;;;;x
+temple_duke_foa_texan_americanist;Marhsal;;;;;;;;;;;;x
+temple_king_foa_texan_americanist;Marhsal;;;;;;;;;;;;;x
+temple_emperor_foa_texan_americanist;Grand Marhsal;;;;;;;;;;;;;x
+barony_texan_americanist;Town;;;;;;;;;;;;;x
+temple_barony_texan_americanist;Field Office;;;;;;;;;;;;;x
+county_texan_americanist;Constabulary;;;;;;;;;;;;;x
+duchy_texan_americanist;Sheriff's Department;;;;;;;;;;;;;x
+kingdom_texan_americanist;State;;;;;;;;;;;;;x
+barony_of_texan_americanist;Town of;;;;;;;;;;;;;x
+temple_barony_of_texan_americanist;Field Office of;;;;;;;;;;;;;x
+county_of_texan_americanist;Constabulary of;;;;;;;;;;;;;x
+duchy_of_texan_americanist;Sheriff's Office of;;;;;;;;;;;;;x
+kingdom_of_texan_americanist;State of;;;;;;;;;;;;;x
+empire_of_texan_americanist;Grand Directorate;;;;;;;;;;;;;x
+baron_female_Western;Officer;;;;;;;;;;;;x
+count_female_Western;Constable;;;;;;;;;;;;;x
+duke_female_Western;Sheriff;;;;;;;;;;;;;x
+king_female_Western;State Governorness;;;;;;;;;;;;;x
+emperor_Western;Grand Director;;;;;;;;;;;;;x
+temple_female_baron_Western;Marshal;;;;;;;;;;;;;x
+temple_count_female_Western;County Marshal;;;;;;;;;;;;;x
+temple_duke_female_Western;Regional Marshal;;;;;;;;;;;;;x
+temple_king_female_Western;State Marshal;;;;;;;;;;;;;x
+temple_emperor_female_Western;Grand Marshal;;;;;;;;;;;;;x
+baron_foa_female_Western;Officer;;;;;;;;;;;;x
+count_foa_female_Western;Constable;;;;;;;;;;;;;x
+duke_foa_female_Western;Sheriff;;;;;;;;;;;;;x
+king_foa_female_Western;Governorness;;;;;;;;;;;;;x
+emperor_foa_female_Western;Director;;;;;;;;;;;;;x
+temple_count_foa_female_Western;Marhsal;;;;;;;;;;;;;x
+temple_duke_foa_female_Western;Marhsal;;;;;;;;;;;;x
+temple_king_foa_female_Western;Marhsal;;;;;;;;;;;;;x
+baron_female_texan_americanist;Officer;;;;;;;;;;;;x
+count_female_texan_americanist;Constable;;;;;;;;;;;;;x
+duke_texan_americanist;Sheriff;;;;;;;;;;;;;x
+king_female_texan_americanist;State Governorness;;;;;;;;;;;;;x
+emperor_texan_americanist;Grand Director;;;;;;;;;;;;;x
+temple_baron_female_texan_americanist;Marshal;;;;;;;;;;;;;x
+temple_count_female_texan_americanist;County Marshal;;;;;;;;;;;;;x
+temple_duke_female_texan_americanist;Regional Marshal;;;;;;;;;;;;;x
+temple_king_female_texan_americanist;State Marshal;;;;;;;;;;;;;x
+temple_emperor_female_texan_americanist;Grand Marshal;;;;;;;;;;;;;x
+baron_foa_female_texan_americanist;Officer;;;;;;;;;;;;x
+count_foa_texan_americanist;Constable;;;;;;;;;;;;;x
+duke_foa_female_texan_americanist;Sheriff;;;;;;;;;;;;;x
+king_foa_female_texan_americanist;Governorness;;;;;;;;;;;;;x
+emperor_foa_female_texan_americanist;Director;;;;;;;;;;;;;x
+temple_count_female_foa_texan_americanist;Marhsal;;;;;;;;;;;;;x
+temple_duke_female_foa_texan_americanist;Marhsal;;;;;;;;;;;;x
+temple_king_female_foa_texan_americanist;Marhsal;;;;;;;;;;;;;x
+temple_emperor_female_foa_texan_americanist;Grand Marhsal;;;;;;;;;;;;;x
+
+#Secret Societies
+secret_religious_society_Western;[GetReligiousCommunityName_Western];[GetReligiousCommunityName_Western];[GetReligiousCommunityName_Western];;[GetReligiousCommunityName_Western];;;;;;;;;x
+secret_religious_society_REAL_Western;The Tread Upon;;;;;;;;;;;;;x
+alt_start_community_name_Western;The [Western.GetName] Faithful;;;;;;;;;;;;;x
+secret_religious_society_Western_desc;[GetReligiousSocietyDesc_Western];[GetReligiousSocietyDesc_Western];[GetReligiousSocietyDesc_Western];;[GetReligiousSocietyDesc_Western];;;;;;;;;x
+secret_religious_society_Western_desc_REAL;Before Old America won its independence from the Redcoats, true patriots were forced to hide their devotion to the Founding Fathers or be sent to the gallows. Those dark days have descended once again, but true Americanist patriots will not be deterred. They will once again rise up and overthrow the tyrannical rule of their oppressors...;;;;;;;;x
+secretly_convert_to_Western_holy_site;Secretly Convert to Western;;;;;;;;;;;;;x
+secretly_convert_to_Western_holy_site_desc;The �YWestern�! pilgrims that flock to the holy site in �Y[Root.Location.GetName]�! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_Western_currency;Devotion;D�votion;Hingabe;;Devoci�n;;;;;;;;;x
+secret_religious_society_Western_rank_1_female;Faithful;Fid�le;Getreue;;Fiel;;;;x
+secret_religious_society_Western_rank_2_female;Adherent;Adh�rente;Anh�ngerin;;Seguidora;;;;x
+secret_religious_society_Western_rank_3_female;Preacher;Pr�cheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_Western_rank_4_female;Herald;Messag�re;Herold;;Mensajera;;;;x
+secret_religious_society_Western_rank_1_male;Faithful;Fid�le;Getreuer;;Fiel;;;;x
+secret_religious_society_Western_rank_2_male;Adherent;Adh�rent;Anh�nger;;Seguidor;;;;x
+secret_religious_society_Western_rank_3_male;Preacher;Pr�cheur;Prediger;;Predicador;;;;x
+secret_religious_society_Western_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_Western;Secret Western Community;;;;;;;;;;;;;x
+secret_Western_community;Secret Western Community;;;;;;;;;;;;;x
+secret_Western_community_desc;In secret, Western patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fid�les se sont organis�s en tant que communaut� dans cette province. De l�, la commaunaut� convertit d'autres personnes, grandit et prot�ge les siens.;;;;;;;;;;;;x
+secret_religious_society_Western_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand pr�tre dirige l'effort mondial visant � r�unir davantage de personnes dans les rangs de sa soci�t�.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bem�hungen leitet, mehr Menschen in den Scho� der Familie zu f�hren.;;El Sumo sacerdote, que dirige la misi�n a escala internacional para atraer a m�s fieles.;;;;;;;;;x
+
+secret_religious_society_texan_americanist;[GetReligiousCommunityName_texan_americanist];[GetReligiousCommunityName_texan_americanist];[GetReligiousCommunityName_texan_americanist];;[GetReligiousCommunityName_texan_americanist];;;;;;;;;x
+secret_religious_society_REAL_texan_americanist;The Tread Upon;;;;;;;;;;;;;x
+alt_start_community_name_texan_americanist;The [texan_americanist.GetName] Faithful;;;;;;;;;;;;;x
+secret_religious_society_texan_americanist_desc;[GetReligiousSocietyDesc_texan_americanist];[GetReligiousSocietyDesc_texan_americanist];[GetReligiousSocietyDesc_texan_americanist];;[GetReligiousSocietyDesc_texan_americanist];;;;;;;;;x
+secret_religious_society_texan_americanist_desc_REAL;Before Old America won its independence from the Redcoats, true patriots were forced to hide their devotion to the Founding Fathers or be sent to the gallows. Those dark days have descended once again, but true Americanist patriots will not be deterred. They will once again rise up and overthrow the tyrannical rule of their oppressors...;;;;;;;;x
+secretly_convert_to_texan_americanist_holy_site;Secretly Convert to texan_americanist;;;;;;;;;;;;;x
+secretly_convert_to_texan_americanist_holy_site_desc;The �Ytexan_americanist�! pilgrims that flock to the holy site in �Y[Root.Location.GetName]�! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_texan_americanist_currency;Devotion;D�votion;Hingabe;;Devoci�n;;;;;;;;;x
+secret_religious_society_texan_americanist_rank_1_female;Faithful;Fid�le;Getreue;;Fiel;;;;x
+secret_religious_society_texan_americanist_rank_2_female;Adherent;Adh�rente;Anh�ngerin;;Seguidora;;;;x
+secret_religious_society_texan_americanist_rank_3_female;Preacher;Pr�cheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_texan_americanist_rank_4_female;Herald;Messag�re;Herold;;Mensajera;;;;x
+secret_religious_society_texan_americanist_rank_1_male;Faithful;Fid�le;Getreuer;;Fiel;;;;x
+secret_religious_society_texan_americanist_rank_2_male;Adherent;Adh�rent;Anh�nger;;Seguidor;;;;x
+secret_religious_society_texan_americanist_rank_3_male;Preacher;Pr�cheur;Prediger;;Predicador;;;;x
+secret_religious_society_texan_americanist_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_community_texan_americanist;Secret texan_americanist Community;;;;;;;;;;;;;x
+secret_texan_americanist_community;Secret texan_americanist Community;;;;;;;;;;;;;x
+secret_texan_americanist_community_desc;In secret, texan_americanist patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fid�les se sont organis�s en tant que communaut� dans cette province. De l�, la commaunaut� convertit d'autres personnes, grandit et prot�ge les siens.;;;;;;;;;;;;x
+secret_religious_society_texan_americanist_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand pr�tre dirige l'effort mondial visant � r�unir davantage de personnes dans les rangs de sa soci�t�.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bem�hungen leitet, mehr Menschen in den Scho� der Familie zu f�hren.;;El Sumo sacerdote, que dirige la misi�n a escala internacional para atraer a m�s fieles.;;;;;;;;;x
+
+
+

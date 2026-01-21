@@ -1,0 +1,90 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Make sure that this file in encoded in ANSI
+#The society name
+stormchaser_society;The Storm Chasers;;;;;;;;;;;;;x
+string_stormchaser_society;stormchaser_society;;;;;;;;;;;;;x
+#The society description
+stormchaser_society_desc;Legands tell of brave indiviuals that would chase the wild storms that plague the Great Plains. We endeavor to follow their footsteps and master Providence's great and powerful will.;;;;;;;;;;;;;x
+#Leader description
+stormchaser_society_leader_desc;This stormchaser has proven their mettle and is seen as the best of the group;;;;;;;;;;;;;x
+#Name of the ranks
+stormchaser_society_rank_1_female;Amateur Tracker;;;;;;;;;;;;;x
+stormchaser_society_rank_1_male;Amateur Tracker;;;;;;;;;;;;;x
+stormchaser_society_rank_2_female;Storm Spotter;;;;;;;;;;;;;x
+stormchaser_society_rank_2_male;Storm Spotter;;;;;;;;;;;;;x
+stormchaser_society_rank_3_female;Meteorologist;;;;;;;;;;;;;x
+stormchaser_society_rank_3_male;Meteorologist;;;;;;;;;;;;;x
+stormchaser_society_rank_4_female;Expert Storm Chaser;;;;;;;;;;;;;x
+stormchaser_society_rank_4_male;Expert Storm Chaser;;;;;;;;;;;;;x
+#Name of the currency
+stormchaser_society_currency;Storm Data;;;;;;;;;;;;;x
+#Rank up button name
+request_to_rank_up_within_stormchaser_society;Request to rank up.;;;;;;;;;;;;;x
+#For tooltip that require being a member
+IS_stormchaser_society_TRIGGER;Is a member of the Storm Chasers.;;;;;;;;;;;;;x
+#Rank up decision if you made a custom one, alongside the required custom_local
+request_to_rank_up_within_stormchaser_societyy;Request a Promotion.;;;;;;;;;;;;;x
+request_to_rank_up_within_stormchaser_society_tt;Has ùY[Root.Society.GetCurrency]ù! greater or equal to [Root.GetSocietyRankUpTooltip1];;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank1;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank2;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank3;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
+
+stormchaser_society_power_1;Trade gathered Storm Data for gold.;;;;;;;;;;;;;x
+stormchaser_society_power_1_desc;Trade gathered Storm Data for gold.;;;;;;;;;;;;;x
+stormchaser_society_power_1_power_desc;Trade gathered Storm Data for gold.;;;;;;;;;;;;;x
+stormchaser_society_power_2;Trade gathered Storm Data for prestige.;;;;;;;;;;;;;x
+stormchaser_society_power_2_desc;Trade gathered Storm Data for prestige.;;;;;;;;;;;;;x
+stormchaser_society_power_2_power_desc;Trade gathered Storm Data for prestige.;;;;;;;;;;;;;x
+stormchaser_society_become_meteorologist;Get Meteorologist Trait;;;;;;;;;;;;;x
+stormchaser_society_become_meteorologist_desc;You've proven yourself a worthy meteorologist, and now you can make it widely known.;;;;;;;;;;;;;x
+stormchaser_society_become_meteorologist_power;Gain the Meteorologist trait.;;;;;;;;;;;;;x
+stormchaser_society_become_meteorologist_power_desc;Gain the Meteorologist trait via targetted decision.;;;;;;;;;;;;;x
+stormchaser_society_become_stormchaser;Get Storm Chaser Trait;;;;;;;;;;;;;x
+stormchaser_society_become_stormchaser_desc;You've gained the support of your peers and established yourself in the Storm Chasers. You have earned the right to call yourself one of them.;;;;;;;;;;;;;x
+stormchaser_society_become_stormchaser_power;Gain the Storm Chaser trait.;;;;;;;;;;;;;x
+stormchaser_society_become_stormchaser_power_desc;Gain the Storm Chaser trait via targetted decision.;;;;;;;;;;;;;x
+stormchaser_society_inspire;Inspire Virtue;;;;;;;;;;;;;x
+stormchaser_society_inspire_desc;Use your experiences to inspire bravery, diligence, or ambition in someone else, as long as you possess one of those traits.;;;;;;;;;;;;;x
+stormchaser_society_inspire_power;Inspire Virtue;;;;;;;;;;;;;x
+stormchaser_society_inspire_power_desc;Use your experiences to inspire bravery, diligence, or ambition in someone else, as long as you possess one of those traits.;;;;;;;;;;;;;x
+String_the_Great_Plains;the Great Plains;;;;;;;;;;;;;x
+
+#The localization for the currency gain
+society_gain_tier_count_tooltip;Is a Count: ßG3.0ß!;;;;;;;;;;;;;x
+society_gain_is_texan_americanist_tooltip;Is Texan Americanist: ßG2.0ß!;;;;;;;;;;;;;x
+society_gain_is_western_americanist_tooltip;Is Western Amercanist: ßG2.0ß!;;;;;;;;;;;;;x
+#
+#Modifiers
+tutorial_successful_mission;One Successful Mission;;;;;;;;;;;;;x
+tutorial_failed_mission;One Failed Mission;;;;;;;;;;;;;x
+tutorial_successful_mission_stacked;Many Successful Missions;;;;;;;;;;;;;x #the _stacked is for when there is several modifiers added to each others, so make them plural.
+tutorial_failed_mission_stacked;Many Failed Missions;;;;;;;;;;;;;x
+#
+#This event is for joining
+EVTDESC_TUTOSOCI_102;You want to join my glorious society?;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_102;Yes sir.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_102;I'm not so sure anymore.;;;;;;;;;;;;;x
+#
+#This event is for rank up
+EVTDESC_TUTOSOCI_122;Greetings [Root.GetSocietyRank] [Root.GetFirstName],\nYou can rank up. [Root.Society.GetName].\n\nSigned,\n[From.GetSocietyRank] [From.GetFirstName];;;;;;;;;;;;;x
+EVTOPTA_EVTDESC_TUTOSOCI_122_122;Great.;;;;;;;;;;;;;x
+#
+#Name for a quest
+quest_tutorial_quest_1;Press the button;;;;;;;;;;;;;x
+#Name for a quest if there is no quest target
+quest_tutorial_quest_1_fallback;Press the button;;;;;;;;;;;;;x
+quest_tutorial_quest_1_desc;Press the button and gain gold!;;;;;;;;;;;;;x
+quest_tutorial_quest_1_tooltip;Press the button in the intrige menu.;;;;;;;;;;;;;x
+#
+#Start Quest event
+EVTDESC_TUTOSOCI_141;You want a quest?;;;;;;;;;;;;;x
+#
+#End Quest event
+EVTDESC_TUTOSOCI_142;You want to complete or fail the quest?;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_142;Complete it.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_142;Fail it..;;;;;;;;;;;;;x
+#
+#End Quest event
+EVTDESC_TUTOSOCI_150;Here be the event text.;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_150;Choice 1.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_150;Choice 2..;;;;;;;;;;;;;x

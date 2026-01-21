@@ -1,0 +1,27 @@
+# 1231 - Bexar
+
+# County Title
+title=c_bexar
+
+# Settlements
+max_settlements=6
+b_fort_sam_houston_TX=castle
+b_san_antonio_TX=city
+b_pleasanton_TX=temple
+b_helotes_TX=castle
+b_floresville_TX=city
+
+# Misc
+culture=tejano
+religion=texas_americanist
+terrain=steppe
+
+1718.1.1={
+	build_wonder=wonder_alamo
+	set_wonder_stage=1
+	build_wonder_upgrade = upgrade_alamo_mission
+}
+
+1946.1.1={
+	build_wonder_upgrade = upgrade_riverwalk
+}

@@ -1,0 +1,128 @@
+99999999 = {
+	name = "Frank"
+	dynasty = 51201514
+	religion = Western
+	culture = oklahoman
+	dna = cafjasjaibv
+	historical = yes
+	father = 99998888
+	
+	diplomacy = 3
+	martial = 10
+	stewardship = 7
+	intrigue = 4
+	learning = 3
+	
+	trait = tough_soldier
+	trait = inspiring_leader
+	trait = gregarious
+	
+	2650.1.1 = {
+		birth = yes
+		}		
+}
+
+99998888 = {
+	name = "Frank"
+	dynasty = 51201514
+	give_nickname = nick_pistol_pete
+	culture = oklahoman
+	religion = Western
+	dna = cafjasjaibv
+	historical = yes
+	1860.10.26 = {birth = yes}
+	1923.10.11 = {
+		create_bloodline = {
+			type = eaton
+			}
+		}	
+	1958.4.8 = {death = yes}
+	}
+}	
+1836022={
+	name="Guillermo"
+	dynasty=1815062
+	dna="chjklejdlmc"
+	culture=tejano
+	religion=texan_americanist
+	martial=7
+	diplomacy=8
+	stewardship=5
+	intrigue=7
+	learning=5
+	trait=charismatic_negotiator
+	trait=impaler
+	trait=shy
+	trait=brave
+	trait=deceitful
+	2626.3.3={birth=yes}
+	2646.4.23={add_spouse=1836023}
+	2688.7.9={death=yes}
+	
+}
+1836023={
+	name="Clara"
+	female=yes
+	dna="belbdnjgdmo"
+	culture=texan
+	religion=americanist
+	martial=3
+	diplomacy=0
+	stewardship=6
+	intrigue=1
+	learning=1
+	trait=tough_soldier
+	trait=slothful
+	trait=greedy
+	trait=lunatic
+	2627.8.16={birth=yes}
+	2646.4.23={add_spouse=1836022}
+	2700.9.15={death=yes}
+}
+
+1836024={
+	name="Marjorie"
+	female=yes
+	dynasty=1815062
+	dna="chlblnkblmo"
+	culture=texan
+	religion=texan_americanist
+	martial=6
+	diplomacy=3
+	stewardship=2
+	intrigue=8
+	learning=3
+	trait=charismatic_negotiator
+	trait=humble
+	trait=brave
+	trait=zealous
+	trait=cruel
+	trait=wounded
+	father=1836022
+	mother=1836023
+	2651.12.29={birth=yes}
+	2698.5.4={death=yes}
+}
+
+1836025={
+	name="Jane"
+	female=yes
+	dynasty=1815062
+	dna="chlklnoddmo"
+	culture=texan
+	religion=texan_americanist
+	martial=3
+	diplomacy=5
+	stewardship=5
+	intrigue=1
+	learning=0
+	trait=fortune_builder
+	trait=scholar
+	trait=craven
+	trait=envious
+	trait=cruel
+	father=1836022
+	mother=1836023
+	2655.9.8={birth=yes}
+	2695.6.30={death=yes}
+}		

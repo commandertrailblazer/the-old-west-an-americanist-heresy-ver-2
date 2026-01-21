@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_meteorologist"
+		texturefile = "gfx/traits/meteorologist_trait.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		}
+	spriteType = {
+		name = "GFX_trait_stormchaser_trait"
+		texturefile = "gfx/traits/stormchaser_trait.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		}	
+	}
