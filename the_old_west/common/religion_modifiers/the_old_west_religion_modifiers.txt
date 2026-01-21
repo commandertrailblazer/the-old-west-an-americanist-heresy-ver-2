@@ -1,0 +1,33 @@
+formed_the_new_west = {
+	authority = 30
+	years = 100
+}
+
+held_county_fair_effects = {
+	authority = 1
+	years = 1
+	monthly_character_piety = 0.02
+	icon = 15
+}
+
+held_state_fair_effects = {
+	authority = 10
+	years = 1
+	monthly_character_piety = 0.02
+	icon = 15
+
+marshals_are_reformed = {
+	authority = 10
+	years = 10
+}
+
+reformed_pony_express = {
+	authority = 10
+	years = 10
+	icon = 15
+	}
+
+texgov = {
+	authority = 20
+	years = 50
+	}

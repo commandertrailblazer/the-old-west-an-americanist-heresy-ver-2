@@ -1,0 +1,23 @@
+pete_pistol = {
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	martial = 2
+	learning = 2
+	diplomacy = 1
+	vassal_opinion = 10
+	same_religion_opinion = 10
+	command_modifier = {
+		morale_offence = 0.1
+		morale_defence = 0.1
+		}
+	quality = 5
+	indestructable = yes
+	active = {
+		religion = Western
+		has_landed_title = c_payne
+		is_adult = yes
+		}
+	stacking = no
+	picture = "GFX_ate_firearm"
+	slot = weapon
+	}

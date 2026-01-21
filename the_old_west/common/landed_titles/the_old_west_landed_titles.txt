@@ -1,0 +1,228 @@
+k_comancheria = {
+	d_oklahoma = {
+		c_okaysee = {
+			holy_site = Western
+		Western = 1500	
+		}
+	}
+	d_amarillo = {
+		c_amarillo = {
+			holy_site = Western
+			holy_site = texan_americanist
+			b_pampa_TX = {
+				pentarchy = texan_americanist
+				}	
+		}
+	}
+	
+}	
+			
+k_old_star = {
+	d_metroplex = {
+		c_tarrant = {
+			holy_site = Western
+			Western = 1000
+		}
+	}
+	d_colorado_brazos = {
+		c_brazos = {
+			holy_site = texan_americanist
+			b_college_station_TX = {
+				pentarchy = texan_americanist
+				}
+			}
+		}
+	d_violet_crown = {
+		c_travis = {
+			holy_site = texan_americanist
+			b_lakeway_TX = {
+				pentarchy = texan_americanist
+				}
+			}
+		}
+	d_alamo = {
+		c_bexar = {
+			holy_site = texan_americanist
+			b_pleasanton_TX = {
+				pentarchy = texan_americanist
+				}
+			}
+		}
+	d_neches = {
+		c_san_jacinto = {
+			holy_site = texan_americanist
+			b_ivanhoe_TX = {
+				pentarchy = texan_americanist
+				}
+			}
+		}	
+}
+
+k_platte = {
+	d_chisholm = {
+		c_dodge = {
+			holy_site = Western
+			Western = 1500
+		}
+	}
+
+}
+				
+k_yellowstone = {
+	d_wyoming = {
+		c_wheatland = {
+			holy_site = Western
+			Western = 100
+		}
+	}
+}
+k_panhandle = {
+	Western = 1000
+	}
+k_colorado
+	Western = 750
+	}
+k_navajoland = {
+	Western = 500
+	}
+k_ozarks = {
+	Western = 250
+	}
+k_missouri = {
+	Western = 250
+	}
+k_iowa = {
+	Western = 150
+	}
+k_deseret = {
+	Western = 100
+	}
+k_platte = {
+	Western = 1500
+	}
+k_panhandle = {
+	Western = 1000
+	}
+k_old_star = {
+	Western = 1000
+	}
+k_colorado
+	Western = 750
+	}
+k_navajoland = {
+	Western = 500
+	}
+k_ozarks = {
+	Western = 250
+	}
+k_missouri = {
+	Western = 250
+	}
+k_iowa = {
+	Western = 150
+	}
+k_deseret = {
+	Western = 100
+	}
+##Religion head
+
+d_usms = {
+	color = { 9 94 230 }
+	capital = 325 #Okaysee
+	
+	dignity = 200
+	
+	title = "Director of the USMS"
+	foa = "DIRECTOR_FOA"
+	landless = yes
+	controls_religion = Western
+	religion = Western
+	culture = okie
+	primary = yes
+	dynasty_title_names = no
+	creation_requires_capital = yes
+	short_name = yes
+}
+
+d_texangoverner = {
+	color = { 86 93 20 }
+	capital = 1235
+	
+	dignity = 200
+	
+	title = "Texan Governor"
+	foa = "TEXANGOV"
+	landless = yes
+	controls_religion = texan_americanist
+	religion = texan_americanist
+	culture = texan
+	primary = yes
+	dynasty_title_names = no
+	creation_requires_capital = yes
+	active = no
+	short_name = yes
+}
+
+#The US Marshals
+d_marshals = {
+	color = { 9 94 230 }
+	capital 325 #Okaysee
+	
+	dignity = 200
+	title = "Chief Marshal"
+	foa = "CHIEF_FOA"
+	holy_order = yes
+	religion = Western
+	culture = okie
+	primary = yes
+	monthly_income = 2
+	mercenary_type = marshals_composition
+	strength_growth_per_century = 0.1
+	landless = yes
+}
+
+#The Texas Rangers
+d_rangers = {
+	color = {9 94 230 }
+	capital 1242 #Dallas
+	
+	dignity = 200
+	title = "Manager of the Team"
+	foa = "MANAGER_FOA"
+	
+	religion = Western
+	culture = texan
+	
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independant = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_rangers_compisition
+}
+	
+##The New West
+e_new_west = {
+
+	title = "Governor"
+	title_female = "Governor"
+	foa = "Governor_FOA"
+
+	color={ 102 53 3 }
+	capital = 325 #Okaysee
+	creation_requires_capital = no
+	dynasty_title_names = no
+	short_name = yes
+	allow = {
+		OR = {
+			religion = Western
+			FROM = {
+				any_previous_holder = {
+					always = yes
+				}
+			}
+		}
+	}
+}
+
