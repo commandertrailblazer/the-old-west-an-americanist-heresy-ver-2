@@ -1,0 +1,38 @@
+western_trail = {
+	wealth = 100
+	trade_post_display_trigger = {
+		OR = {
+			province_id = 1224 #Corpus Christi
+			province_id = 1231 #Bexar
+			province_id = 1235 #Travis
+			province_id = 1243 #Tarrant
+			province_id = 302 #Wichita Falls
+			province_id = 322 #Fort Sill
+			province_id = 325 #Okaysee
+			province_id = 323 #Skeleton
+			province_id = 349 #Dodge
+			province_id = 351 #Arikaree Breaks
+			province_id = 360 #Wildcat
+			province_id = 476 #Wheatland
+		}
+	}
+
+	modifier = { # Modifiers applied to each province on a trade route.                    
+		castle_tax_modifier = 0.01 # Percentage multiplier applied to tax income for castle holdings in a province
+		city_tax_modifier = 0.01 # Percentage multiplier applied to tax income for city holdings in a province. 
+		temple_tax_modifier = 0.01 # Percentage multiplier applied to tax income for temple holdings in a province. 
+		tribal_tax_modifier = 0.01 # Percentage multiplier applied to tax income for tribal holdings in a province. 
+		trade_route_value = 2.5 # Modifier used to determine base trade route income for a trade post on a province.
+		local_movement_speed = 0.025 # Percentage multiplier applied to movement speed of troops through a province.
+		tech_growth_modifier = 0.025 # Percentage multiplier for technology spread between provinces.
+		icon = 4 # Sets the icon displayed for the province modifier, in this case the Stewardship icon.
+	}
+
+	start = { # Starting province for the trade route. Trade flows from this province to all other provinces connected downstream.
+		1224 #Corpus Christi
+	}
+	path = { # Creates a connection between either a starting province or an already defined end province of a previous path.
+		1224 1229 1231 1232 1235 973 975 1243 302 322 325 323 342 349 734 351 392 360 476
+	
+	}
+}

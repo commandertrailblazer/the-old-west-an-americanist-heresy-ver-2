@@ -1,0 +1,21 @@
+western_trail_trade_post_trigger = {
+	custom_tooltip = {
+		text = western_trail_trade_province_desc
+		hidden_tooltip = {
+			OR =  {
+				province_id = 1224 #Corpus Christi
+				province_id = 1231 #Bexar
+				province_id = 1235 #Travis
+				province_id = 1243 #Tarrant
+				province_id = 302 #Wichita Falls
+				province_id = 322 #Fort Sill
+				province_id = 325 #Okaysee
+				province_id = 323 #Skeleton
+				province_id = 349 #Dodge
+				province_id = 351 #Arikaree Breaks
+				province_id = 360 #Wildcat
+				province_id = 476 #Wheatland
+			}
+		}
+	}
+}

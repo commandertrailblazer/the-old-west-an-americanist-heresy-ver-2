@@ -1,0 +1,16 @@
+#Marshals of the West
+marshals_composition = {
+	levy_size = 4
+	knights = 250
+	light_cavalry = 250
+	cowboys = 500
+}
+
+#Texas Rangers
+d_rangers_compisition = {
+	levy_size = 1
+	archers = 100
+	light_infantry = 250
+	pikeman = 100
+	heavy_infantry = 50
+}
