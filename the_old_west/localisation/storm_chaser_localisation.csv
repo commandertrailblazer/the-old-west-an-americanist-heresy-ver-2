@@ -24,10 +24,10 @@ request_to_rank_up_within_stormchaser_society;Request to rank up.;;;;;;;;;;;;;x
 IS_stormchaser_society_TRIGGER;Is a member of the Storm Chasers.;;;;;;;;;;;;;x
 #Rank up decision if you made a custom one, alongside the required custom_local
 request_to_rank_up_within_stormchaser_societyy;Request a Promotion.;;;;;;;;;;;;;x
-request_to_rank_up_within_stormchaser_society_tt;Has ùY[Root.Society.GetCurrency]ù! greater or equal to [Root.GetSocietyRankUpTooltip1];;;;;;;;;;;;;x
-GetStormChaserRankUpTooltip_Standard_Rank1;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
-GetStormChaserRankUpTooltip_Standard_Rank2;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
-GetStormChaserRankUpTooltip_Standard_Rank3;ùY[Root.Society.GetCurrency]ù!;;;;;;;;;;;;;x
+request_to_rank_up_within_stormchaser_society_tt;Has ßY[Root.Society.GetCurrency]ß! greater or equal to [Root.GetSocietyRankUpTooltip1];;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank1;ßY[Root.Society.GetCurrency]ß!;;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank2;ßY[Root.Society.GetCurrency]ß!;;;;;;;;;;;;;x
+GetStormChaserRankUpTooltip_Standard_Rank3;ßY[Root.Society.GetCurrency]ß!;;;;;;;;;;;;;x
 
 stormchaser_society_power_1;Trade gathered Storm Data for gold.;;;;;;;;;;;;;x
 stormchaser_society_power_1_desc;Trade gathered Storm Data for gold.;;;;;;;;;;;;;x
