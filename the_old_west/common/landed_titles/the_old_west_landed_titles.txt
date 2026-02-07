@@ -205,8 +205,8 @@ d_rangers = {
 ##The New West
 e_new_west = {
 
-	title = "Governor"
-	title_female = "Governor"
+	title = "Western Governor"
+	title_female = "Western Governorness"
 	foa = "Governor_FOA"
 
 	color={ 102 53 3 }
