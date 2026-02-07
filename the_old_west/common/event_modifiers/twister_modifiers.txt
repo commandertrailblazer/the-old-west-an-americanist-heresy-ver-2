@@ -1,0 +1,28 @@
+twisterdamage_ef0ef1 = {
+    local_tax_modifier = -0.15
+    build_cost_modifier = 0.15
+    build_time_modifier = 0.15
+    icon = 134
+}
+
+twisterdamage_ef2ef3 = {
+    local_tax_modifier = -0.30
+    local_build_cost_modifier = 0.30
+    build_time_modifier = 0.30
+    local_revolt_risk = 0.02
+    levy_size = -0.30
+    levy_reinforce_rate = -0.50
+    supply_limit -1
+    icon = 130
+}
+
+twisterdamage_ef4ef5 = {
+    local_tax_modifier = -0.50
+    local_build_cost_modifier = 0.50
+    build_time_modifier = 0.50
+    local_revolt_risk = 0.07
+    levy_size = -0.75
+    levy_reinforce_rate = -0.9
+    supply_limit = -3
+    icon = 132
+}
