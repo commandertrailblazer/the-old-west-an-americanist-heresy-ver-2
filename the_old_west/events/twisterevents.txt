@@ -1,0 +1,308 @@
+# ******************************* Tornadoes! *********************************
+
+namespace = twisterevent
+
+character_event = {
+	id = twisterevent.1
+	name = EVTNAME_smalltwisterstrikes
+	desc = EVTDESC_smalltwisterstrikes
+	picture = GFX_evt_siege
+
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = recent_tornado }
+			had_character_flag = { flag = recent_tornado
+									years >= 2
+								}
+		}
+		month = 3
+		NOT = { month = 11 }
+        OR = {
+            government = open_range_feudalism_government
+            any_realm_province = {
+                OR = {
+			        region = world_great_plains
+                    region = world_southeast
+                }
+            }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 2.5	# spring tornado season 
+			month = 3
+			NOT = { month = 6 }
+		}
+		modifier = {
+			factor = 2 # fall tornado season
+			month = 8
+			NOT = { month = 11 }
+		}
+	}
+
+	option = {
+		name = twisterdistress.1
+		random_realm_province = {
+				add_province_modifier = { name = twisterdamage_ef0ef1 duration = 12 }
+			}
+			
+	}			
+
+	after = {
+        set_character_flag = recent_tornado
+	}
+}
+
+character_event = {
+	id = twisterevent.2
+	name = EVTNAME_medtwisterstrikes
+	desc = EVTDESC_medtwisterstrikes
+	picture = GFX_evt_siege
+
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = recent_tornado }
+			had_character_flag = { flag = recent_tornado
+									years >= 2
+								}
+		}
+		month = 3
+		NOT = { month = 11 }
+        OR = {
+            government = open_range_feudalism_government
+            any_realm_province = {
+                OR = {
+			        region = world_great_plains
+                    region = world_southeast
+                }
+            }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 3.5	# spring tornado season 
+			month = 3
+			NOT = { month = 6 }
+		}
+		modifier = {
+			factor = 2 # fall tornado season
+			month = 8
+			NOT = { month = 11 }
+		}
+	}
+
+	option = {
+		name = twisterdistress.2
+		random_realm_province = {
+				add_province_modifier = { name = twisterdamage_ef2ef3 duration = 24 }
+			}
+			
+	}			
+
+	after = {
+        set_character_flag = recent_tornado
+	}
+}
+
+narrative_event = {
+	id = twisterevent.3
+	name = EVTNAME_bigtwisterstrikes
+	desc = EVTDESC_bigtwisterstrikes
+	picture = GFX_evt_burning_house
+
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = recent_tornado }
+			had_character_flag = { flag = recent_tornado
+									years >= 2
+								}
+		}
+		month = 3
+		NOT = { month = 11 }
+        OR = {
+            government = open_range_feudalism_government
+            any_realm_province = {
+                OR = {
+			        region = world_great_plains
+                    region = world_southeast
+                }
+            }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 4	# spring tornado season 
+			month = 3
+			NOT = { month = 6 }
+		}
+		modifier = {
+			factor = 2.5 # fall tornado season
+			month = 8
+			NOT = { month = 11 }
+		}
+	}
+
+	option = {
+		name = twisterdistress.3
+		random_realm_province = {
+				add_province_modifier = { name = twisterdamage_ef4ef5 duration = 60 }
+			}
+			
+	}			
+
+	after = {
+        set_character_flag = recent_tornado
+	}
+}
+
+narrative_event = { #tornado outbreak
+	id = twisterevent.4
+	name = EVTNAME_majoroutbreak
+	desc = EVTDESC_majoroutbreak
+	picture = GFX_evt_kraken
+
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			tier = king
+			tier = emperor
+		}
+		NOT = { has_character_flag = tornado_outbreak }
+		OR = {
+			NOT = { has_character_flag = recent_tornado }
+			had_character_flag = { flag = recent_tornado
+									years >= 2
+								}
+		}
+		month = 3
+		NOT = { month = 11 }
+        OR = {
+            government = open_range_feudalism_government
+            any_realm_province = {
+                OR = {
+			        region = world_great_plains
+                    region = world_southeast
+                }
+            }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 4	# spring tornado season 
+			month = 3
+			NOT = { month = 6 }
+		}
+		modifier = {
+			factor = 2.5 # fall tornado season
+			month = 8
+			NOT = { month = 11 }
+		}
+	}
+
+	option = {
+		name = twisterdistress.4
+		random_list = {
+			10 = {
+				custom_tooltip = {
+					text = notwistershappen
+				}
+			}
+			45 = { 
+				custom_tooltip = {
+					text = outbreak_minor
+					hidden_tooltip = {
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+					}
+				}
+			}
+			15 = {
+				custom_tooltip = {
+					text = outbreak_widespread
+					hidden_tooltip = {
+						any_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 24 }
+						}
+					}
+				}			 
+			}
+			25 = {
+				custom_tooltip = {
+					text = outbreak_severe
+					hidden_tooltip = {
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+						}
+					}
+				}	
+			}
+			5 = {
+				custom_tooltip = {
+					text = outbreak_devastating
+					hidden_tooltip = {
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 84 }
+						}
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 84 }
+						}	
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+						}	
+						random_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+						}
+						any_realm_province = {
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 }
+						}
+					}
+				}	
+			}
+		}
+	}			
+
+	after = {
+        set_character_flag = recent_tornado
+		set_character_flag = tornado_outbreak
+	}
+}
