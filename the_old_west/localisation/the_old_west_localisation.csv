@@ -12,8 +12,8 @@ texan_americanist_FEATURES;ßY*ß! Texans cannot reform America.\nßY*ß! Texan rule
 
 #titles
 e_new_west;The New West;;;;;;;;;;;;;x
-e_new_west_adj;Western;;;;;;;;;;;;;x
-d_marshals;The Marshals of the West;;;;;;;;;;;;;x
+e_new_west_adj;Great Western;;;;;;;;;;;;;x
+d_marshals;Marshals of the West;;;;;;;;;;;;;x
 d_usms;The United States Marshal Service;;;;;;;;;;;;;x
 d_rangers;Texas Rangers;;;;;;;;;;;;;x
 d_texangoverner;Governate of Texas;;;;;;;;;;;;;x
@@ -29,6 +29,8 @@ western_pilgrimage;Western Pilgrimage;;;;;;;;;;;;;x
 western_pilgrimage_desc;The time has come to make a pilgrimage to the holy sites of our faith;;;;;;;;;;;;;x
 donate_money_to_marshals;Donate money to the Marshals;;;;;;;;;;;;;x
 donate_money_to_marshals_desc;Donate some money to the Marshals;;;;;;;;;;;;;x
+vassalize_marshals;Vassalize the Marshal Holy Order ;;;;;;;;;;;;x
+vassalize_marshals_desc;As a great Western ruler, you have enough sway to command the Marshals toward your interests.;;;;;;;;;;;;x
 texasgreat;Establish the office of Texan Governor.;;;;;;;;;;;;;x
 texasgreat_desc;Now that Texas has been restored, it is time to install a Texan governor to guide our faith in this new age.;;;;;;;;;;;;;x
 texgov;Restored Governate;;;;;;;;;;;;;x
@@ -36,7 +38,7 @@ texgov;Restored Governate;;;;;;;;;;;;;x
 #events
 fair_invitations;Send out some invitations to your vassals;;;;;;;;;;;;;x
 western_events.1.desc;Carving out a place for you and your decendants from the ruins of the West and a new power has now risen on the Plains;;;;;;;;;;;;;x
-marshals_20;[From.GetTitledFirstName] has agreed to enter your service. The Marshals now serve you!;;;;;;;;;;;;;x
+EVTDESCmarshals.20;[From.GetTitledFirstName] has agreed to enter your service. The Marshals now serve you!;;;;;;;;;;;;;x
 THANKS_BE_TO_PROVIDENCE;Thanks be to Providence!;;;;;;;;;;;;;x
 EVTDESCmarshals.31;[From.GetTitledFirstName] has graciously accepted your donation and has assured you it will be put to good use.;;;;;;;;;;;;;x
 EVTDESCmarshals_50;The Marshals have been expelled from [PrimaryTitle.GetFullBaseName] and all their lands handed over to you;;;;;;;;;;;;;x
@@ -172,7 +174,7 @@ temple_barony_of_Western;Field Office of;;;;;;;;;;;;;x
 county_of_Western;Constabulary of;;;;;;;;;;;;;x
 duchy_of_Western;Sheriff's Office of;;;;;;;;;;;;;x
 kingdom_of_Western;State of;;;;;;;;;;;;;x
-empire_of_Western;Grand Directorate;;;;;;;;;;;;;x
+empire_of_Western;Grand Directorate of;;;;;;;;;;;;;x
 baron_texan_americanist;Officer;;;;;;;;;;;;x
 count_texan_americanist;Constable;;;;;;;;;;;;;x
 duke_texan_americanist;Sheriff;;;;;;;;;;;;;x
@@ -248,41 +250,69 @@ alt_start_community_name_Western;The [Western.GetName] Faithful;;;;;;;;;;;;;x
 secret_religious_society_Western_desc;[GetReligiousSocietyDesc_Western];[GetReligiousSocietyDesc_Western];[GetReligiousSocietyDesc_Western];;[GetReligiousSocietyDesc_Western];;;;;;;;;x
 secret_religious_society_Western_desc_REAL;Before Old America won its independence from the Redcoats, true patriots were forced to hide their devotion to the Founding Fathers or be sent to the gallows. Those dark days have descended once again, but true Americanist patriots will not be deterred. They will once again rise up and overthrow the tyrannical rule of their oppressors...;;;;;;;;x
 secretly_convert_to_Western_holy_site;Secretly Convert to Western;;;;;;;;;;;;;x
-secretly_convert_to_Western_holy_site_desc;The ùYWesternù! pilgrims that flock to the holy site in ùY[Root.Location.GetName]ù! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secret_religious_society_Western_currency;Devotion;Dùvotion;Hingabe;;Devociùn;;;;;;;;;x
-secret_religious_society_Western_rank_1_female;Faithful;Fidùle;Getreue;;Fiel;;;;x
-secret_religious_society_Western_rank_2_female;Adherent;Adhùrente;Anhùngerin;;Seguidora;;;;x
-secret_religious_society_Western_rank_3_female;Preacher;Prùcheuse;Predigerin;;Predicadora;;;;x
-secret_religious_society_Western_rank_4_female;Herald;Messagùre;Herold;;Mensajera;;;;x
-secret_religious_society_Western_rank_1_male;Faithful;Fidùle;Getreuer;;Fiel;;;;x
-secret_religious_society_Western_rank_2_male;Adherent;Adhùrent;Anhùnger;;Seguidor;;;;x
-secret_religious_society_Western_rank_3_male;Preacher;Prùcheur;Prediger;;Predicador;;;;x
+secretly_convert_to_Western_holy_site_desc;The ßYWesternß! pilgrims that flock to the holy site in ßY[Root.Location.GetName]ß! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_Western_currency;Devotion;Dßvotion;Hingabe;;Devocißn;;;;;;;;;x
+secret_religious_society_Western_rank_1_female;Faithful;Fidßle;Getreue;;Fiel;;;;x
+secret_religious_society_Western_rank_2_female;Adherent;Adhßrente;Anhßngerin;;Seguidora;;;;x
+secret_religious_society_Western_rank_3_female;Preacher;Prßcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_Western_rank_4_female;Herald;Messagßre;Herold;;Mensajera;;;;x
+secret_religious_society_Western_rank_1_male;Faithful;Fidßle;Getreuer;;Fiel;;;;x
+secret_religious_society_Western_rank_2_male;Adherent;Adhßrent;Anhßnger;;Seguidor;;;;x
+secret_religious_society_Western_rank_3_male;Preacher;Prßcheur;Prediger;;Predicador;;;;x
 secret_religious_society_Western_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
 secret_religious_community_Western;Secret Western Community;;;;;;;;;;;;;x
 secret_Western_community;Secret Western Community;;;;;;;;;;;;;x
-secret_Western_community_desc;In secret, Western patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidùles se sont organisùs en tant que communautù dans cette province. De lù, la commaunautù convertit d'autres personnes, grandit et protùge les siens.;;;;;;;;;;;;x
-secret_religious_society_Western_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand prùtre dirige l'effort mondial visant ù rùunir davantage de personnes dans les rangs de sa sociùtù.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemùhungen leitet, mehr Menschen in den Schoù der Familie zu fùhren.;;El Sumo sacerdote, que dirige la misiùn a escala internacional para atraer a mùs fieles.;;;;;;;;;x
+secret_Western_community_desc;In secret, Western patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidßles se sont organisßs en tant que communautß dans cette province. De lß, la commaunautß convertit d'autres personnes, grandit et protßge les siens.;;;;;;;;;;;;x
+secret_religious_society_Western_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand prßtre dirige l'effort mondial visant ß rßunir davantage de personnes dans les rangs de sa socißtß.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemßhungen leitet, mehr Menschen in den Schoß der Familie zu fßhren.;;El Sumo sacerdote, que dirige la misißn a escala internacional para atraer a mßs fieles.;;;;;;;;;x
 
 secret_religious_society_texan_americanist;[GetReligiousCommunityName_texan_americanist];[GetReligiousCommunityName_texan_americanist];[GetReligiousCommunityName_texan_americanist];;[GetReligiousCommunityName_texan_americanist];;;;;;;;;x
 secret_religious_society_REAL_texan_americanist;The Tread Upon;;;;;;;;;;;;;x
 alt_start_community_name_texan_americanist;The [texan_americanist.GetName] Faithful;;;;;;;;;;;;;x
 secret_religious_society_texan_americanist_desc;[GetReligiousSocietyDesc_texan_americanist];[GetReligiousSocietyDesc_texan_americanist];[GetReligiousSocietyDesc_texan_americanist];;[GetReligiousSocietyDesc_texan_americanist];;;;;;;;;x
 secret_religious_society_texan_americanist_desc_REAL;Before Old America won its independence from the Redcoats, true patriots were forced to hide their devotion to the Founding Fathers or be sent to the gallows. Those dark days have descended once again, but true Americanist patriots will not be deterred. They will once again rise up and overthrow the tyrannical rule of their oppressors...;;;;;;;;x
-secretly_convert_to_texan_americanist_holy_site;Secretly Convert to texan_americanist;;;;;;;;;;;;;x
-secretly_convert_to_texan_americanist_holy_site_desc;The ùYtexan_americanistù! pilgrims that flock to the holy site in ùY[Root.Location.GetName]ù! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secret_religious_society_texan_americanist_currency;Devotion;Dùvotion;Hingabe;;Devociùn;;;;;;;;;x
-secret_religious_society_texan_americanist_rank_1_female;Faithful;Fidùle;Getreue;;Fiel;;;;x
-secret_religious_society_texan_americanist_rank_2_female;Adherent;Adhùrente;Anhùngerin;;Seguidora;;;;x
-secret_religious_society_texan_americanist_rank_3_female;Preacher;Prùcheuse;Predigerin;;Predicadora;;;;x
-secret_religious_society_texan_americanist_rank_4_female;Herald;Messagùre;Herold;;Mensajera;;;;x
-secret_religious_society_texan_americanist_rank_1_male;Faithful;Fidùle;Getreuer;;Fiel;;;;x
-secret_religious_society_texan_americanist_rank_2_male;Adherent;Adhùrent;Anhùnger;;Seguidor;;;;x
-secret_religious_society_texan_americanist_rank_3_male;Preacher;Prùcheur;Prediger;;Predicador;;;;x
+secretly_convert_to_texan_americanist_holy_site;Secretly Convert to Texan Americanism;;;;;;;;;;;;;x
+secretly_convert_to_texan_americanist_holy_site_desc;The ßYTexan Americanistß! pilgrims that flock to the holy site in ßY[Root.Location.GetName]ß! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secret_religious_society_texan_americanist_currency;Devotion;Dßvotion;Hingabe;;Devocißn;;;;;;;;;x
+secret_religious_society_texan_americanist_rank_1_female;Faithful;Fidßle;Getreue;;Fiel;;;;x
+secret_religious_society_texan_americanist_rank_2_female;Adherent;Adhßrente;Anhßngerin;;Seguidora;;;;x
+secret_religious_society_texan_americanist_rank_3_female;Preacher;Prßcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_texan_americanist_rank_4_female;Herald;Messagßre;Herold;;Mensajera;;;;x
+secret_religious_society_texan_americanist_rank_1_male;Faithful;Fidßle;Getreuer;;Fiel;;;;x
+secret_religious_society_texan_americanist_rank_2_male;Adherent;Adhßrent;Anhßnger;;Seguidor;;;;x
+secret_religious_society_texan_americanist_rank_3_male;Preacher;Prßcheur;Prediger;;Predicador;;;;x
 secret_religious_society_texan_americanist_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
-secret_religious_community_texan_americanist;Secret texan_americanist Community;;;;;;;;;;;;;x
-secret_texan_americanist_community;Secret texan_americanist Community;;;;;;;;;;;;;x
-secret_texan_americanist_community_desc;In secret, texan_americanist patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidùles se sont organisùs en tant que communautù dans cette province. De lù, la commaunautù convertit d'autres personnes, grandit et protùge les siens.;;;;;;;;;;;;x
-secret_religious_society_texan_americanist_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand prùtre dirige l'effort mondial visant ù rùunir davantage de personnes dans les rangs de sa sociùtù.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemùhungen leitet, mehr Menschen in den Schoù der Familie zu fùhren.;;El Sumo sacerdote, que dirige la misiùn a escala internacional para atraer a mùs fieles.;;;;;;;;;x
+secret_religious_community_texan_americanist;Secret Texan Americanist Community;;;;;;;;;;;;;x
+secret_texan_americanist_community;Secret Texan Americanist Community;;;;;;;;;;;;;x
+secret_texan_americanist_community_desc;In secret, Texan Americanist patriots have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidßles se sont organisßs en tant que communautß dans cette province. De lß, la commaunautß convertit d'autres personnes, grandit et protßge les siens.;;;;;;;;;;;;x
+secret_religious_society_texan_americanist_leader_desc;The Chief Justice, leading the international effort of bringing more people into the fold.;Le grand prßtre dirige l'effort mondial visant ß rßunir davantage de personnes dans les rangs de sa socißtß.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemßhungen leitet, mehr Menschen in den Schoß der Familie zu fßhren.;;El Sumo sacerdote, que dirige la misißn a escala internacional para atraer a mßs fieles.;;;;;;;;;x
 
+##Tornado Events
+
+#modifers
+twisterdamage_ef0ef1;Minor Tornado Damage;;;;;;;;;;;;;x
+twisterdamage_ef0ef1_desc;A minor twister has recently affected the area.;;;;;;;;;;;;;x
+twisterdamage_ef2ef3;Major Tornado Damage;;;;;;;;;;;;;x
+twisterdamage_ef2ef3_desc;This region has recently suffered a violent twister.;;;;;;;;;;;;;x
+twisterdamage_ef4ef5;Severe Tornado Damage;;;;;;;;;;;;;x
+twisterdamage_ef4ef5_desc;A powerful, large and very violent twister has struck this region. It will take some time to recover.;;;;;;;;;;;;;x
+
+#Events
+EVTNAME_smalltwisterstrikes;Small Tornado Sighted;;;;;;;;;;;;;x
+EVTDESC_smalltwisterstrikes;You recieve a report from a local official. It details the sighting of a small twister. There's little to be done about it, and what damage it caused is already being worked on. There's some disruption to the local economy, but it will only be a short-term problem. \n You attend to other matters.;;;;;;;;;;;;;x
+EVTNAME_medtwisterstrikes;Large Tornado Sighted;;;;;;;;;;;;;x
+EVTDESC_medtwisterstrikes;Life in this region is full of dangers. Violent tornadoes are just one of them. You've received a report that a local community has been heavily damaged from a recent violent twister. Reconstruction has already begun, but it will be some time until the area is back to full productivity.;;;;;;;;;;;;;x
+EVTNAME_bigtwisterstrikes;Massive Tornado Sighted;;;;;;;;;;;;;x
+EVTDESC_bigtwisterstrikes;Residents called it a monster. The description is apt, as what other than a monster wider than whole villages could do the damage that you see. The tornado even tore the bark from trees and pulverized stone fortifications. It will take this province some time to heal.;;;;;;;;;;;;;x
+EVTNAME_majoroutbreak;Tornado Outbreak;;;;;;;;;;;;;x
+EVTDESC_majoroutbreak;Oppressive heat, the air thick with dew, an eerie calm. The signs are clear. The grim faces of the watchmen confirm the worst. The heavens themselves threaten to descend upon your realm. A tornado outbreak is certain. All that's unknown is how severe it will be.;;;;;;;;;;;;;x
+twisterdistress.1;Oh well. It could have been worse.;;;;;;;;;;;;;x
+twisterdistress.2;Put together relief aid immediately.;;;;;;;;;;;;;x
+twisterdistress.3;For many, the scars will never heal.;;;;;;;;;;;;;x
+twisterdistress.4;We can only wait, watch, and pray...;;;;;;;;;;;;;x
+notwistershappen;just some rain.;;;;;;;;;;;;;x
+outbreak_minor;relatively weak storms cover a small area, causing little damage.;;;;;;;;;;;;;x
+outbreak_widespread;weaker storms affect a massive area, putting strain on the entire realm's resources.;;;;;;;;;;;;;x
+outbreak_severe;several violent tornadoes wreck havok, causing short-term severe damage in multiple locations.;;;;;;;;;;;;;x
+outbreak_devastating;a devastating, widespread severe storm outbreak occurs, including at least a couple nightmare, violently intense tornadoes, effecting every part of the realm.;;;;;;;;;;;;;x
 
 
