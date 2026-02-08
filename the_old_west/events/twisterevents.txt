@@ -47,7 +47,7 @@ character_event = {
 	option = {
 		name = twisterdistress.1
 		random_realm_province = {
-				add_province_modifier = { name = twisterdamage_ef0ef1 duration = 12 }
+				add_province_modifier = { name = twisterdamage_ef0ef1 duration = 365 }
 			}
 			
 	}			
@@ -102,7 +102,7 @@ character_event = {
 	option = {
 		name = twisterdistress.2
 		random_realm_province = {
-				add_province_modifier = { name = twisterdamage_ef2ef3 duration = 24 }
+				add_province_modifier = { name = twisterdamage_ef2ef3 duration = 720 }
 			}
 			
 	}			
@@ -157,7 +157,7 @@ narrative_event = {
 	option = {
 		name = twisterdistress.3
 		random_realm_province = {
-				add_province_modifier = { name = twisterdamage_ef4ef5 duration = 60 }
+				add_province_modifier = { name = twisterdamage_ef4ef5 duration = 1825 }
 			}
 			
 	}			
@@ -227,19 +227,19 @@ narrative_event = { #tornado outbreak
 					text = outbreak_minor
 					hidden_tooltip = {
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 } 
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 } 
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 } 
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 } 
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 } 
 						}
 					}
 				}
@@ -249,7 +249,7 @@ narrative_event = { #tornado outbreak
 					text = outbreak_widespread
 					hidden_tooltip = {
 						any_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 24 }
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 720 }
 						}
 					}
 				}			 
@@ -259,19 +259,19 @@ narrative_event = { #tornado outbreak
 					text = outbreak_severe
 					hidden_tooltip = {
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 1460 }
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 1460 }
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 1460 }
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 1460 } 
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 } 
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 1460 } 
 						}
 					}
 				}	
@@ -281,19 +281,19 @@ narrative_event = { #tornado outbreak
 					text = outbreak_devastating
 					hidden_tooltip = {
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 84 }
+							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 2555 }
 						}
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 84 }
+							add_province_modifier = { name = twisterdamage_ef4ef5 duration = 2555 }
 						}	
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 1460 }
 						}	
 						random_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 48 }
+							add_province_modifier = { name = twisterdamage_ef2ef3 duration = 1460 }
 						}
 						any_realm_province = {
-							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 18 }
+							add_province_modifier = { name = twisterdamage_ef0ef1 duration = 540 }
 						}
 					}
 				}	
