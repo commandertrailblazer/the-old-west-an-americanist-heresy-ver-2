@@ -97,6 +97,7 @@ society_decisions = { #only available to members of a society
 
 		potential = { 
 			society_member_of = stormchaser_society
+			society_rank = 2
 			trigger_if = {
 				limit =
 				{ has_character_flag = traded_stormdata }
@@ -139,6 +140,7 @@ society_decisions = { #only available to members of a society
 
 		potential = { 
 			society_member_of = stormchaser_society
+			society_rank = 2
 			trigger_if = {
 				limit =
 				{ has_character_flag = traded_stormdata }
