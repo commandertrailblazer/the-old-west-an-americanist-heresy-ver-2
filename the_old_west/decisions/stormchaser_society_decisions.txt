@@ -76,7 +76,7 @@ society_decisions = { #only available to members of a society
 			hidden_tooltip = {
 				save_event_target_as = rank_up_target #mark the character as the one ranking up
 				set_character_flag = has_sent_request_to_rank_up
-				character_event = { id = TUTOSOCI.120 days = 20 random = 10 } # sends hidden delayed event to self, which then sends request to Leader of the society
+				character_event = { id = stormchasersociety.120 days = 20 random = 10 } # sends hidden delayed event to self, which then sends request to Leader of the society
 				
 			}
 		}
@@ -121,7 +121,7 @@ society_decisions = { #only available to members of a society
 				limit = {
 					has_quest = quest_stormchaser_quest_1
 				}
-				character_event = { id = TUTOSOCI.142 }
+				character_event = { id = stormchasersociety.142 }
 			}
 		}
 
@@ -164,7 +164,7 @@ society_decisions = { #only available to members of a society
 				limit = {
 					has_quest = quest_stormchaser_quest_1
 				}
-				character_event = { id = TUTOSOCI.142 }
+				character_event = { id = stormchasersociety.142 }
 			}
 		}
 
