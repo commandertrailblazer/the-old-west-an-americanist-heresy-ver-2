@@ -140,19 +140,99 @@ stormchaser_society = { #society code name
 			value = 1
 			trait = strong
 		}
+
+		has_trait = {
+			value = 3
+			trait = patient
+		}
+
+		has_trait = {
+			value = 5
+			trait = genius
+		}
+
+		has_trait = {
+			value = 2
+			trait = quick
+		}
+		has_trait = {
+			value = 1
+			trait = ambitious
+		}
+
+		has_trait = {
+			value = 3
+			trait = diligent
+		}
+
+		has_trait = {
+			value = 3
+			trait = meteorologist
+		}
+
+		has_trait = {
+			value = 3
+			trait = stormchaser_trait
+		}
+
 		has_trait = {
 			value = 3
 			trait = brave
-		}	
+		}
 
 		has_trait = {
 			value = -4
 			trait = craven
 		}
+
+		has_trait = {
+			value = -1
+			trait = greedy
+		}
+
+		has_trait = {
+			value = slothful
+			trait = -2
+		}
+
+		has_trait = {
+			value = depressed
+			trait = -3
+		}
+
+		has_trait = {
+			value = deceitful
+			trait = -1
+		}
+
+		has_trait = {
+			value = -1
+			trait = humble
+		}
 		
+		has_trait = {
+			value = -3
+			trait = dull
+		}
+		
+		has_trait = {
+			value = feeble
+			trait = -5
+		}
+
+		has_trait = {
+			value = -1
+			trait = content
+		}
+
 		has_trait = {
 			value = -2
 			trait = weak
+		}
+		
+		has_trait = {
+			value = arbitrary
+			trait = -1
 		}
 		
 		society_rank = { 
@@ -184,11 +264,17 @@ stormchaser_society = { #society code name
 		}
 		triggered_gain = {
 			desc = "society_gain_is_texan_americanist_tooltip"
-			religion = texan_americanist
+			trigger = {
+				religion = texan_americanist
+			}
+			value = 3	
 		}
 		triggered_gain = {
 			desc = "society_gain_is_western_americanist_tooltip"
-			religion = Western
+			trigger = {	
+				religion = Western
+			}
+			value = 3
 		}
 
 	}
@@ -203,6 +289,22 @@ stormchaser_society = { #society code name
 			factor = 3
 			trait = strong
 		}
+
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+
+		modifier = {
+			factor = 3
+			trait = meteorologist
+		}
+
+		modifier = {
+			factor = 3
+			trait = stormchaser_trait
+		}
+
 		modifier = {
 			factor = 5
 			trait = brave
@@ -210,6 +312,22 @@ stormchaser_society = { #society code name
 		modifier = {
 			factor = -3
 			trait = weak
+		}
+		modifier = {
+			factor = -5
+			trait = craven
+		}
+		modifier = {
+			factor = -7
+			trait = cruel
+		}
+		modifier = {
+			factor = -2
+			trait = greedy
+		}
+		modifier = {
+			factor = -3
+			trait = arbitrary
 		}
 	}
 	
