@@ -59,32 +59,101 @@ tutorial_successful_mission;One Successful Mission;;;;;;;;;;;;;x
 tutorial_failed_mission;One Failed Mission;;;;;;;;;;;;;x
 tutorial_successful_mission_stacked;Many Successful Missions;;;;;;;;;;;;;x #the _stacked is for when there is several modifiers added to each others, so make them plural.
 tutorial_failed_mission_stacked;Many Failed Missions;;;;;;;;;;;;;x
+chasing_storm;Chasing Storms;;;;;;;;;;;;;x
+chasing_storm_desc;This character is attempting to track some nature's most power storms.;;;;;;;;;;;;;x
 #
 #This event is for joining
-EVTDESC_TUTOSOCI_102;You want to join my glorious society?;;;;;;;;;;;;;x
-EVTOPTA_TUTOSOCI_102;Yes sir.;;;;;;;;;;;;;x
-EVTOPTB_TUTOSOCI_102;I'm not so sure anymore.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_102;Thank you for showing an interest in the Storm Chasers! The perils and glories of the Great Plains awaits you. Before you join, I must ask that you made a small donation.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_102;Of course.;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_102;I'm not so sure anymore.;;;;;;;;;;;;;x
 #
 #This event is for rank up
-EVTDESC_TUTOSOCI_122;Greetings [Root.GetSocietyRank] [Root.GetFirstName],\nYou can rank up. [Root.Society.GetName].\n\nSigned,\n[From.GetSocietyRank] [From.GetFirstName];;;;;;;;;;;;;x
-EVTOPTA_EVTDESC_TUTOSOCI_122_122;Great.;;;;;;;;;;;;;x
-#
-#Name for a quest
-quest_tutorial_quest_1;Press the button;;;;;;;;;;;;;x
-#Name for a quest if there is no quest target
-quest_tutorial_quest_1_fallback;Press the button;;;;;;;;;;;;;x
-quest_tutorial_quest_1_desc;Press the button and gain gold!;;;;;;;;;;;;;x
-quest_tutorial_quest_1_tooltip;Press the button in the intrige menu.;;;;;;;;;;;;;x
-#
-#Start Quest event
-EVTDESC_TUTOSOCI_141;You want a quest?;;;;;;;;;;;;;x
-#
-#End Quest event
-EVTDESC_TUTOSOCI_142;You want to complete or fail the quest?;;;;;;;;;;;;;x
-EVTOPTA_TUTOSOCI_142;Complete it.;;;;;;;;;;;;;x
-EVTOPTB_TUTOSOCI_142;Fail it..;;;;;;;;;;;;;x
-#
-#End Quest event
-EVTDESC_TUTOSOCI_150;Here be the event text.;;;;;;;;;;;;;x
-EVTOPTA_TUTOSOCI_150;Choice 1.;;;;;;;;;;;;;x
-EVTOPTB_TUTOSOCI_150;Choice 2..;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_122;Greetings [Root.GetSocietyRank] [Root.GetFirstName],\nYou can rank up. [Root.Society.GetName].\n\nSigned,\n[From.GetSocietyRank] [From.GetFirstName];;;;;;;;;;;;;x
+EVTOPTA_EVTDESC_stormchasersociety_122_122;Great.;;;;;;;;;;;;;x
+
+#Custom Tooltip Text
+severitychance;Be ready for what the Plains have in store for us...;;;;;;;;;;;;;x
+tornadomoveson;The chase is over, but the twister moves on...;;;;;;;;;;;;;x
+medtornadomiss;missing the intercept.;;;;;;;;;;;;;x
+medtornadointercept;getting in the perfect position.;;;;;;;;;;;;;x
+medtornadodirect;being caught in the path.;;;;;;;;;;;;;x
+fleetornadonow;Make a run for our lives!;;;;;;;;;;;;;x
+bigtornadomiss;missing the intercept.;;;;;;;;;;;;;x
+bigtornadointercept;getting in the best postion to watch the beast.;;;;;;;;;;;;;x
+bigtornadodirect;§Rthe beast turns on us...§;;;;;;;;;;;;;x
+
+#Trade Storm Data Quest
+quest_stormchaser_quest_1;Give Storm Data;;;;;;;;;;;;x
+quest_stormchaser_quest_1_fallback;Press the button;;;;;;;;;;;;;x
+quest_stormchaser_quest_1_desc;Exhange Storm Data for gold or prestige.;;;;;;;;;;;;;x
+quest_stormchaser_quest_1_tooltip;Use either decision for exchanging Storm Data for gold or prestige in the intrigue menu.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_141;Howdy [From.GetSocietyRank] [From.GetFirstName]! As Storm Chasers, we are eager to learn of the exploits of our members. If you would give us some of your storm data, you will be rewarded.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_142;You've done well! Your Data will be analyzed and distributed to the rest of the society for study.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_142;All in a day's work.;;;;;;;;;;;;;x
+
+#Give Aid Quest
+quest_stormchaser_quest_2;Give Storm Aid;;;;;;;;;;;;x
+quest_stormchaser_quest_2_fallback;Press the option;;;;;;;;;;;;;x
+quest_stormchaser_quest_2_desc;Be prepared to give gold to help in aid efforts.;;;;;;;;;;;;;x
+quest_stormchaser_quest_2_tooltip;After the next tornado event, press the option for aid.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_151;Howdy, [Root.GetSocietyRank] [Root.GetFirstName]! Since we as Storm Chasers spend most of our time watching the skies, the primary reason for our work are the people on the ground. While we can't stop these storms, we can provide aid to those who need it. Be prepared to offer aid when given the chance.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_152;You did well, [Root.GetSocietyRank] [Root.GetFirstName]. Your aid reminds us all as to why we do this.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_152;It is my priviledge.;;;;;;;;;;;;;x
+stormchaseraid.1;Offer to aid the victims from my treasury.;;;;;;;;;;;;;x
+
+#Chase Storm Quest
+quest_stormchaser_quest_3;Chase a Storm;;;;;;;;;;;;x
+quest_stormchaser_quest_3_fallback;Press the option;;;;;;;;;;;;;x
+quest_stormchaser_quest_3_desc;Be prepared to chase a storm when the opportunity arises.;;;;;;;;;;;;;x
+quest_stormchaser_quest_3_tooltip;Wait for an envent to appear to give you an opportunity to chase a tornado. This will be a skill-based event chain.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_181;Howdy, [Root.GetSocietyRank] [Root.GetFirstName]! One of the first duties as a Storm Chaser is actually track the storms that are given life by Providence. This will be a dangerous task, but a potentially very rewarding one.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_182;It was said that the gods of the Old World could divine in advance days, even weeks, before a storm struck. Those arcane methods are lost to myth and time, but even to this day, signs in the skies can be read. You receive one such sign. Within the next few days, the skies will open up and visit upon your realm a storm of epic porportions. This is the opportunity that you have waited for. It is time to prepare an expedition.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_182;Get my best horses ready!;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_182;Right now? I've got that thing...;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_183;It appears that your instincts and training are correct. A dark, grey/green sky stretches out ahead of you. The air is still, the silence broken by the distant sound of thunder. The storm you've waited for has arrived.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_183;There's no turning back now...;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_184;The heavens unleashed thunder and rain, and you stood ready. Anticlimactically, Providence had different plans, as that rain and thunder was all she gave you and your expedition, along with waterlogged notes and drenched clothing. Your observations are useful, however, and would be enough to satsify your colleagues. ;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_184;It's just as well. I'm ready to be out of these wet clothes!;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_184;This is not close to enough! I'll wait until the next opportunity!;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_185;You get just the right angle to watch the small twister struggle to touch the ground. It does, finally, much to your delight. Unfortunately, that delight is short-lived as it lasts mere seconds before returning to the skies onnce more. You watch for some time after, but it doesn't reappear. You've gotten some good notes, however, sould you shoose to end it here.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_185;At least it was something. Let's collect our notes and return home.;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_185;That's it?! No, the chase continues until I have something of real value.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_186;The distinct shape of a funnel reaches for the ground. It's apparent - this twister has legs to stand on. Even if it isn't among the most deadly if its kind, you can get a really good observations from it.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_186;Excellent! This is just what my fellow Storm Chasers are looking for.;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_186;If I keep going, I might get even more data! §R(This could be potentially dangerous!)§;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1861;You follow the path of the twister. It appears to still maintain its strength. As you watch it, it's path seems to shift. If you could get ahead of it safely, you could collect valuable data. There is a chance, however, that you are incorrect, and trying to maneuever around it could lead you to miss it entirely...or worse, be in the damage path with no escape.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1861;It's a chance I'm willing to take!;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_1861;The risk is too great. I have the data I need.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1862;You set up to watch the tornado approach. At first, it appears that you're in the right position, as the funnel does not seem to be moving either to the right or the left, a sure sign that you're facing it head on. As you take your notes, however, it is undeniable that the twister is getting smaller - more distant, by the minute. With a heavy sigh, you complete your notes. It appears that you have missed your chance.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1862;At least I was able to get some good notes out of this.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1863;Your instincts were right. Taking a backroad was a bumpy and quite anooying affair, but it paid off well. You have an ecellent vantage point ahead of the tornado and out of its. What's more, there's little rain around the funnel, giving you a perfect view for note only notes, but sketches as well. This has proven to be a most fruitful expedition.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1863;Eureka!;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1864;It appears that you have pick a excellent location to observe the tornado. You begin to take notes when the air suddenly changes. A shout from one of your retainers catches brings your full attention to the vortex....as it approaches. You're not only in its path, but you are far too close.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1864;There's no time! Run!;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_1864;I should've known it was to end like this...;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1865;It was far too close for comfort. Some in your retinue have been injured, but no one too severely. You seem to have escaped unscathed. While you weren't able to take the extensive notes you wanted, your experience is detail enough.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1865;Let's go home.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1866;Your ears pop from the change in air pressure, though any discomfort from that is drowned out the roar of the winds. You're thrown from your carriage and black out. When you wake, you're drenched in a ditch - likely your only saving grace. Your notes are gone, but your experience will still be useful.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1866;I need bandages...and a hot bath.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_187;What started off as a small, weak-looking funnel in time turned into a violent monster. Tendrils within and without the torndo reach for the earth, leaving noting stading in their wake. This is a rare and valuable oppotunity to watch one of these monsters in action.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_187;I think I've got what I need.;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_187;There's a chance at glory here, I can't pass this up! §R(This could be potentially fatal!)§;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1871;The monster funnel roars to life, expanding large enough nto swalow whole villages. You may have an opportunity to intercept it and get valuable data, though such an action could be deadly.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1871;The risk is simply too great.;;;;;;;;;;;;;x
+EVTOPTB_stormchasersociety_1871;For Glory! For [Root.Religion.GetHighGodName]!;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1872;You round a bend in the road only to see that not only have not gotta closer to the tornado, but that you've miscalculated its path and it is moving further away.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1872;Damn! At least I have some good data for the Storm Chasers.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1873;You perch yourself on a rare hill, giving you a view for miles around. Not only that, but you correctly guessed the path of the funnel. It will pass close, but not dangerously so, giving you a perfect opportunity to take measurements and notes.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1873;Praise [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1874;At first, It looks like the monsterous tornado is growing wider. suddenly, a blast of wind;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1874;Run, ruuuuun!;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1875;By luck or by Providence, you manage to get out of the path of monster tornado. You live to tell the story to your fellow Storm Chasers. Your notes and experience will garner you much goodwill.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1875;How ex;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_1876;Either it shifted at the last moment, or you managed to get out of the way just in time. Regardless, you hvae escaped. a trickle of blood flows from your head from a glancing blow from a small piece of debris, but you and your notes have survived and now you have a tale to inspire others.;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_1876;Thank [Root.Religion.GetRandomGodName] it wasn't worse.;;;;;;;;;;;;;x
+EVTDESC_stormchasersociety_190;For the briefest of momements, the wind stills. You're allowed a single moment to look over your shoulder, and see only the monster staring back at you. It's far too late now, you're in it's maw...;;;;;;;;;;;;;x
+EVTOPTA_stormchasersociety_190;Oh, [Root.Religion.GetHighGodName], have mercy...;;;;;;;;;;;;;x
+
+
+#Death
+DEATH_KILLED_BY_TORNADO;was overtaken by a tornado.;;;;;;;;;;;;;x
