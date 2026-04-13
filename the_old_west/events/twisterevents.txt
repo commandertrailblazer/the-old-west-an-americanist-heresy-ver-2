@@ -48,9 +48,63 @@ character_event = {
 		name = twisterdistress.1
 		random_realm_province = {
 				add_province_modifier = { name = twisterdamage_ef0ef1 duration = 365 }
+		}		
+	}
+
+	option = {
+		name = stormchaseraid.1
+		trigger = has_quest = { quest_stormchaser_quest_2 }
+		wealth = -150
+		character_event = { id = stormchasersociety.152 }
+		set_character_flag = small_twister_aid
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					trait = just
+				}
+				add_trait = just
 			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = kind
+				}
+				add_trait = kind
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = charitable
+				}
+				add_trait = charitable
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = cruel
+				}
+				remove_trait = cruel
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = arbitrary
+				}
+				remove_trait = arbitrary
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = greedy
+				}
+				remove_trait = greedy
+			}
+			40 = {}
+		}
+	}
 			
-	}			
+		
 
 	after = {
         set_character_flag = recent_tornado
@@ -104,7 +158,61 @@ character_event = {
 		random_realm_province = {
 				add_province_modifier = { name = twisterdamage_ef2ef3 duration = 720 }
 			}
-			
+	}
+
+	option = {
+		name = stormchaseraid.1
+		trigger = has_quest = { quest_stormchaser_quest_2 }
+		wealth = -250
+		character_event = { id = stormchasersociety.152 }
+		set_character_flag = med_twister_aid_twister_aid
+		random_realm_province = {
+				add_province_modifier = { name = twisterdamage_ef0ef1 duration = 365 }
+		}
+		random_list = {
+			15 = {
+				modifier = {
+					factor = 0
+					trait = just
+				}
+				add_trait = just
+			}
+			15 = {
+				modifier = {
+					factor = 0
+					trait = kind
+				}
+				add_trait = kind
+			}
+			15 = {
+				modifier = {
+					factor = 0
+					trait = charitable
+				}
+				add_trait = charitable
+			}
+			15 = {
+				modifier = {
+					factor = 0
+					trait = cruel
+				}
+				remove_trait = cruel
+			}
+			15 = {
+				modifier = {
+					factor = 0
+					trait = arbitrary
+				}
+				remove_trait = arbitrary
+			}
+			15 = {
+				modifier = {
+					factor = 0
+					trait = greedy
+				}
+				remove_trait = greedy
+			}
+			10 = {}
 	}			
 
 	after = {
@@ -159,7 +267,61 @@ narrative_event = {
 		random_realm_province = {
 				add_province_modifier = { name = twisterdamage_ef4ef5 duration = 1825 }
 			}
-			
+	}
+
+	option = {
+		name = stormchaseraid.1
+		trigger = has_quest = { quest_stormchaser_quest_2 }
+		wealth = -250
+		character_event = { id = stormchasersociety.152 }
+		set_character_flag = med_twister_aid_twister_aid
+		random_realm_province = {
+				add_province_modifier = { name = twisterdamage_ef2ef3 duration = 365 }
+		}
+		random_list = {
+			5 = {
+				modifier = {
+					factor = 0
+					trait = just
+				}
+				add_trait = just
+			}
+			5 = {
+				modifier = {
+					factor = 0
+					trait = kind
+				}
+				add_trait = kind
+			}
+			5 = {
+				modifier = {
+					factor = 0
+					trait = charitable
+				}
+				add_trait = charitable
+			}
+			5 = {
+				modifier = {
+					factor = 0
+					trait = cruel
+				}
+				remove_trait = cruel
+			}
+			5 = {
+				modifier = {
+					factor = 0
+					trait = arbitrary
+				}
+				remove_trait = arbitrary
+			}
+			5 = {
+				modifier = {
+					factor = 0
+					trait = greedy
+				}
+				remove_trait = greedy
+			}
+			70 = {}
 	}			
 
 	after = {
@@ -306,3 +468,49 @@ narrative_event = { #tornado outbreak
 		set_character_flag = tornado_outbreak
 	}
 }
+
+#######################stormchasering event for society#######################
+
+character_event = { 
+	id = twisterevent.10
+	name = EVTNAME_chasingtwister1
+	desc = EVTDESC_chasingtwister1
+	picture = GFX_evt_siege
+
+	only_playable = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = recent_tornado }
+			had_character_flag = { flag = recent_tornado
+									years >= 2
+								}
+		}
+		has_quest = quest_stormchaser_quest_3
+		month = 3
+		NOT = { month = 11 }
+        OR = {
+            government = open_range_feudalism_government
+            any_realm_province = {
+                OR = {
+			        region = world_great_plains
+                    region = world_southeast
+                }
+            }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 3.5	# spring tornado season 
+			month = 4
+			NOT = { month = 6 }
+		}
+		modifier = {
+			factor = 3 # fall tornado season
+			month = 8
+			NOT = { month = 11 }
+		}
+	}
+}	
