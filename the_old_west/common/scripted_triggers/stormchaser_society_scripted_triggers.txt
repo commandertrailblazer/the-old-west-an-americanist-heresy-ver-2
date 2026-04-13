@@ -3,6 +3,7 @@ is_stormchaser_society_trigger = { #trigger for members, useful if you have seve
 		text = IS_stormchaser_society_TRIGGER
 		OR = {
 			society_member_of = stormchaser_society
+		}	
 	}
 } 
 
