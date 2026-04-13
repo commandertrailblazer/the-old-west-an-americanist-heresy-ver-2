@@ -26,3 +26,13 @@ twisterdamage_ef4ef5 = {
     supply_limit = -3
     icon = 132
 }
+
+chasing_storm = {
+    stewardship = -3
+    monthly_character_prestige = 5
+    learning = 3
+    martial = 3
+    brave_opinion = 25
+    spouse_opinion = -15
+    tech_growth_modifier_military = 0.25
+}
